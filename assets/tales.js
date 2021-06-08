@@ -4,13 +4,14 @@
 
 let raceSelect = Math.ceil(Math.random() * 9)
 let uri = "https://www.dnd5eapi.co/api/races/"
-let race = document.querySelector("#randomRace")
+let race = document.querySelector("#race")
 
 fetch(uri)
     .then(res => res.json())
     .then(data => {
-        race.setAttribute("src", data.results.index)
-        console.log(raceSelect);
+        let randomIndex = Math.floor(Math.random()*data.results.length)
+        race.textContent = data.results[randomIndex].index;
+        console.log(data);
     })
 
 // function to establish character class

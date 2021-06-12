@@ -1,0 +1,63 @@
+/* DEFAULT STYLE FOR MOBILE UP TO 425px */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    --primary-color: #e40511;
+    --secondary-color: #e6cd77;
+    --tertiary-color: #ffffffda; 
+}
+
+header {
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex: wrap; 
+    align-items: center; 
+}
+
+header h1 {
+    font-family: Luminari; 
+    padding: 3%;
+    text-shadow: 0 0 1px white;
+    color: var(--primary-color)
+}
+
+header img {
+    max-height: auto;
+    max-width: 100px;
+    padding: 3%;
+    object-fit: fill;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.introduction {
+    border: 2px solid black;
+    margin: 3%;
+    background-color: var(--tertiary-color)
+}
+
+.introduction p {
+    margin: 3%;
+    text-shadow: 0 0 1px var(--secondary-color);
+    line-height: 1.4;
+}
+
+.early-line-style {
+    font-family: Luminari;
+    color: var(--primary-color);
+    text-shadow: 0 0 2px white;
+    font-size:larger;
+}
+
+footer p {
+    font-family: Luminari;
+    text-align: center; 
+}

@@ -17,13 +17,16 @@ let heroData = function () {
 
     let raceSelect = Math.ceil(Math.random() * 9)
     let apiRace = "https://www.dnd5eapi.co/api/races/"
-    let race = document.querySelector(".race")
+    let race = document.querySelectorAll(".race")
+    console.log(race);
 
     fetch(apiRace)
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.results.length)
-            race.textContent = data.results[randomIndex].index;
+            race.forEach(node => {
+                node.textContent = data.results[randomIndex].index;
+            });
             console.log(data);
         })
 
@@ -31,19 +34,22 @@ let heroData = function () {
 
     let classSelect = Math.ceil(Math.random() * 12)
     let apiClass = "https://www.dnd5eapi.co/api/classes/"
-    let heroClass = document.querySelector(".class")
+    let heroClass = document.querySelectorAll(".class")
 
     fetch(apiClass)
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.results.length)
-            heroClass.textContent = data.results[randomIndex].index;
+            heroClass.forEach(node => {
+                node.textContent = data.results[randomIndex].index;
+            });
             console.log(data)
         })
 
     // function to establish hero's value
 
     let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance"]
+    // let valueSet = ["honor", "vengeance"]
     let value = document.querySelector("#value")
 
     let randomIndex = Math.floor(Math.random() * valueSet.length)
@@ -51,6 +57,13 @@ let heroData = function () {
     value.textContent = valueSet[randomIndex];
     console.log(valueSet[randomIndex]);
 
+    if ((valueSet[randomIndex]) = "vengeance") {
+        let venge = [" for their lover's death", " for their brother's murder"]
+        let vengeValue = Math.ceil(Math.random() * venge.length)
+        valueSet.textContent = valueSet[randomIndex] += vengeValue; 
+    } 
+
+    // monsterAdj.textContent = monsterAdjSet[randomIndex]
 };
 
 // FUNCTION TO SELECT VERB

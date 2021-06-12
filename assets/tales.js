@@ -15,7 +15,7 @@ let heroData = function () {
 
     // function to establish hero race
 
-    let raceSelect = Math.ceil(Math.random() * 9)
+    // let raceSelect = Math.ceil(Math.random() * 9)
     let apiRace = "https://www.dnd5eapi.co/api/races/"
     let race = document.querySelectorAll(".race")
     console.log(race);
@@ -32,7 +32,7 @@ let heroData = function () {
 
     // function to establish hero class
 
-    let classSelect = Math.ceil(Math.random() * 12)
+    // let classSelect = Math.ceil(Math.random() * 12)
     let apiClass = "https://www.dnd5eapi.co/api/classes/"
     let heroClass = document.querySelectorAll(".class")
 
@@ -96,7 +96,7 @@ let monsterData = function () {
     };
     // function to establish monster
 
-    let monsterSelect = Math.ceil(Math.random() * 332)
+    // let monsterSelect = Math.ceil(Math.random() * 332)
     let apiMonster = "https://www.dnd5eapi.co/api/monsters/"
     let monster = document.querySelector("#monster")
 

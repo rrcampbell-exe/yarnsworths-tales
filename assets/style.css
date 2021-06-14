@@ -43,13 +43,28 @@ body {
 }
 
 .introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 3% 0 3%; 
+}
+
+.introduction h3 {
+    margin-bottom: 5px;
+}
+
+.introduction p {
+    line-height: 1.2;
+}
+
+.tale-intro {
     border: 2px solid black;
     margin: 3%;
     background-color: var(--tertiary-color);
     border-radius: 4px; 
 }
 
-.introduction p {
+.tale-intro p {
     margin: 3%;
     text-shadow: 0 0 1px var(--secondary-color);
     line-height: 1.4;

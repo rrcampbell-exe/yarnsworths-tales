@@ -110,6 +110,13 @@ let monsterData = function () {
 };
 
 
+var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
+tellMeAnotherYarnsyEl.addEventListener("click", () => {
+    heroData();
+    verbChoice();
+    monsterData();
+});
+
 // Running of Functions
 
 heroData();

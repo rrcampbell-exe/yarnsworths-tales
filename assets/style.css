@@ -13,6 +13,8 @@
     --tertiary-color: #ffffffda; 
 }
 
+/* Header Style */
+
 header {
     background-color: var(--tertiary-color);
     display: flex;
@@ -34,6 +36,8 @@ header img {
     object-fit: fill;
 }
 
+/* Body Style */
+
 body {
     background-color: var(--secondary-color);
 }
@@ -41,7 +45,8 @@ body {
 .introduction {
     border: 2px solid black;
     margin: 3%;
-    background-color: var(--tertiary-color)
+    background-color: var(--tertiary-color);
+    border-radius: 4px; 
 }
 
 .introduction p {
@@ -56,6 +61,30 @@ body {
     text-shadow: 0 0 2px white;
     font-size:larger;
 }
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    border: 2px solid black;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 10px 10px 10px;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+    background-color: white;
+}
+
+/* Footer Style */
 
 footer p {
     font-family: Luminari;

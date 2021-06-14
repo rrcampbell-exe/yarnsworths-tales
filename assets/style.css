@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     transition-duration: 0.5s;
     background-color: white;
 }
@@ -104,4 +104,14 @@ button:hover {
 footer p {
     font-family: Luminari;
     text-align: center; 
+}
+
+footer a, footer a:visited {
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+footer a:hover {
+    color: white;
+    transition-duration: 0.3s;
 }

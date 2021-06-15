@@ -47,9 +47,8 @@ let heroData = function () {
         })
 
     // function to establish hero's value
-
-    let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance"]
-    // let valueSet = ["honor", "vengeance"]
+    // let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance"]
+    let valueSet = ["honor", "vengeance"]
     let value = document.querySelector("#value")
 
     let randomIndex = Math.floor(Math.random() * valueSet.length)
@@ -57,14 +56,13 @@ let heroData = function () {
     value.textContent = valueSet[randomIndex];
     console.log(valueSet[randomIndex]);
 
-    // if ((valueSet[randomIndex]) = "vengeance") {
-    //     let venge = [" for their lover's death", " for their brother's murder"]
-    //     let randomIndex = Math.ceil(Math.random() * venge.length)
-    //     console.log(randomIndex);
-    //     valueSet = valueSet[randomIndex] + venge[randomIndex]; 
-    //     console.log(valueSet);
-    // } 
-
+    if (valueSet[randomIndex] = "vengeance") {
+        let venge = [" for their lover's death", " for their brother's murder"]
+        let randomIndex = Math.floor(Math.random() * venge.length)
+        console.log(randomIndex);
+        value.textContent += venge[randomIndex]; 
+        console.log(valueSet[randomIndex] += venge[randomIndex]);
+    };
     // monsterAdj.textContent = monsterAdjSet[randomIndex]
 };
 

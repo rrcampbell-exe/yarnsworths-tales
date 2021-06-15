@@ -68,6 +68,7 @@ body {
     margin: 3%;
     text-shadow: 0 0 1px var(--secondary-color);
     line-height: 1.4;
+    /* visibility: hidden; */
 }
 
 .early-line-style {

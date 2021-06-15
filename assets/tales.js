@@ -109,12 +109,31 @@ let monsterData = function () {
         })
 };
 
+let taleVisibility = function () {
+    let taleContent = document.querySelectorAll(".tale-intro p")
+    taleContent.forEach(node => {
+        node.style.visibility = "visible"
+    })
+};
+
+let taleInvisibility = function () {
+    let taleContent = document.querySelectorAll(".tale-intro p")
+    taleContent.forEach(node => {
+        node.style.visibility = "hidden"
+    })
+};
+
+let delayFunction = function () {
+    setTimeout(taleVisibility, 250);
+}; 
 
 var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
 tellMeAnotherYarnsyEl.addEventListener("click", () => {
+    taleInvisibility();
     heroData();
     verbChoice();
     monsterData();
+    delayFunction();
 });
 
 // Running of Functions

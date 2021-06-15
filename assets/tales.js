@@ -138,6 +138,8 @@ tellMeAnotherYarnsyEl.addEventListener("click", () => {
 
 // Running of Functions
 
+taleInvisibility();
 heroData();
 verbChoice();
 monsterData();
+delayFunction();

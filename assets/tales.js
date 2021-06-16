@@ -55,12 +55,22 @@ let heroData = function () {
     value.textContent = valueSet[randomIndex];
     console.log(valueSet[randomIndex]);
 
+    // cascading logic if "vengeance" is chosen as hero's value
     if (valueSet[randomIndex] === "vengeance") {
-        let venge = [" for their lover's death", " for their brother's murder", " for the disappearance of their beloved pet", " for a most grotesque public embarassment", " for the most salacious of gossipmongering", " for a betrayal of unspeakable devilry", " for an incurable curse bestowed upon their family name", ""]
+        let venge = [" for their lover's death", " for their brother's murder", " for the disappearance of their beloved pet", " for a most grotesque public embarassment", " for the most salacious of gossipmongering", " for a betrayal of unspeakable devilry", " for an incurable curse bestowed upon their family", ""]
         let randomIndex = Math.floor(Math.random() * venge.length)
         console.log(randomIndex);
         value.textContent += venge[randomIndex]; 
         console.log(valueSet[randomIndex] += venge[randomIndex]);
+    };
+    
+    // cascading logic if "faith" is chosen as hero's value
+    if (valueSet[randomIndex] === "faith") {
+        let gods = [" Auril, goddess of winter", "Azuth, god of wizards", "Bane, god of tyranny", "Beshaba, goddess of misfortune", "Bhaal, god of murder", "Chauntea, goddess of agriculture", "Cyric, god of lies", "Deneir, god of writing", "Eldath, goddess of peace", "Gond, god of craft", "Helm, god of protection", "Ilmater, god of endurance", "Kelemvor, god of the dead", "Lathander, god of birth and renewal", "Leira, goddess of illusion", "Lliira, goddess of joy", "Loviatar, goddess of pain", "Malar, god of the hunt", "Mask, god of thieves", "Mielikki, goddess of forests", "Milil, god of poetry and song", "Myrkul, god of death", "Mystra, goddess of magic", "Oghma, god of knowledge", "Savras, god of divination and fate", "Selûne, goddess of the moon", "Shar, goddess of darkness and loss", "Silvanus, god of wild nature", "Sune, goddess of love and beauty", "Talona, goddess of disease and poison", "Talos, god of storms", "Tempus, god of war", "Torm, god of courage and self-sacrifice", "Tymora, god of justice", "Umberlee, goddess of the sea", "Waukeen, goddess of trade"]
+        let randomIndex = Math.floor(Math.random() * gods.length)
+        console.log(randomIndex);
+        value.textContent = gods[randomIndex]; 
+        console.log(gods[randomIndex]);
     };
 };
 

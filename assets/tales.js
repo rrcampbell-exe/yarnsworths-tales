@@ -47,7 +47,7 @@ let heroData = function () {
         })
 
     // function to establish hero's value
-    let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance"]
+    let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance", "fulfilling a prophecy", "wish fulfillment"]
     let value = document.querySelector("#value")
 
     let randomIndex = Math.floor(Math.random() * valueSet.length)
@@ -71,6 +71,15 @@ let heroData = function () {
         console.log(randomIndex);
         value.textContent = gods[randomIndex]; 
         console.log(gods[randomIndex]);
+    };
+    
+    // cascading logic if "loyalty" is chosen as hero's value
+    if (valueSet[randomIndex] === "loyalty") {
+        let loyalties = [" to their father", " to their mother", " to their king", " to their queen", " to an archmage of dubious rapport", " to a childhood friend"]
+        let randomIndex = Math.floor(Math.random() * loyalties.length)
+        console.log(randomIndex);
+        value.textContent += loyalties[randomIndex]; 
+        console.log(loyalties[randomIndex]);
     };
 };
 

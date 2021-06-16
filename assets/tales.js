@@ -47,7 +47,7 @@ let heroData = function () {
         })
 
     // function to establish hero's value
-    let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance", "fulfilling a prophecy", "wish fulfillment"]
+    let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance", "prophecy", "wish fulfillment"]
     let value = document.querySelector("#value")
 
     let randomIndex = Math.floor(Math.random() * valueSet.length)

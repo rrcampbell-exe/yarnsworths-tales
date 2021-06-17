@@ -48,7 +48,7 @@ let heroData = function () {
 
     // cascading logic if "vengeance" is chosen as hero's value
     if (valueSet[randomIndex] === "vengeance") {
-        let venge = [" for their lover's death", " for their brother's murder", " for the disappearance of their beloved pet", " for a most grotesque public embarassment", " for the most salacious of gossipmongering", " for a betrayal of unspeakable devilry", " for an incurable curse bestowed upon their family", ""]
+        let venge = [" for their lover's death", " for their brother's murder", " for the disappearance of their beloved pet", " for a most grotesque public embarassment", " for the most salacious of gossipmongering", " for a betrayal of unspeakable devilry", " for an incurable curse bestowed upon their family", " for a most foul disrespect cast upon their liege lord", " for having sullied the virtue of their betrothed", " for a most disgusting act", " for a deceit of unfathomable consequence", " for an act of guile ill-conceived", ""]
         let randomIndex = Math.floor(Math.random() * venge.length)
         value.textContent += venge[randomIndex];
     };
@@ -62,7 +62,7 @@ let heroData = function () {
 
     // cascading logic if "loyalty" is chosen as hero's value
     if (valueSet[randomIndex] === "loyalty") {
-        let loyalties = [" to their father", " to their mother", " to their king", " to their queen", " to an archmage of dubious rapport", " to a childhood friend"]
+        let loyalties = [" to their father", " to their mother", " to their king", " to their queen", " to an archmage of dubious repute", " to a childhood friend", " to the custodian of the orphanage who raised them", " to an admiral of questionable integrity", " to the local constabulary", " to the order of the Emerald Enclave", " to their patron"]
         let randomIndex = Math.floor(Math.random() * loyalties.length)
         value.textContent += loyalties[randomIndex];
     };

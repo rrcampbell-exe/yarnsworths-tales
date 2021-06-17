@@ -24,7 +24,7 @@ header {
 
 header h1 {
     font-family: Luminari; 
-    padding: 3%;
+    padding: 1.5%;
     text-shadow: 0 0 1px white;
     color: var(--primary-color)
 }

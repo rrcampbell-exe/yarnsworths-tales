@@ -29,11 +29,11 @@ header h1 {
     color: var(--primary-color)
 }
 
-header img {
+#header-yarnsy {
     max-height: auto;
     max-width: 100px;
-    padding: 3%;
-    object-fit: fill;
+    padding: 10px 3% 10px 0;
+    object-fit: scale-down;
 }
 
 /* Body Style */
@@ -46,7 +46,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px 3% 0 3%; 
+    margin-top: 10px;
+    text-align: center; 
 }
 
 .introduction h3 {
@@ -59,7 +60,7 @@ body {
 
 .tale-intro {
     border: 2px solid black;
-    margin: 3%;
+    margin: 0 0 3% 0;
     background-color: var(--tertiary-color);
     border-radius: 4px; 
 }
@@ -77,6 +78,15 @@ body {
     font-size:larger;
 }
 
+.container #body-yarnsy {
+    align-items: end;
+}
+
+#body-yarnsy {
+    max-width: 100%;
+    object-fit: cover;
+}
+
 .button-container {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +99,7 @@ button {
     color: var(--primary-color);
     border-radius: 4px;
     padding: 5px;
-    margin: 0 10px 10px 10px;
+    margin: 0 0 3% 0;
     transition-duration: 0.5s;
 }
 
@@ -114,4 +124,46 @@ footer a, footer a:visited {
 footer a:hover {
     color: white;
     transition-duration: 0.3s;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 767px) {
+    #body-yarnsy {
+        visibility: hidden;
+        height: 0%;
+        width: 0%;
+    }
+
+    .introduction {
+        margin: 10px 3% 0 3%;
+        text-align: left;
+    }
+
+    .tale-intro {
+        margin: 0 3% 3% 3%;
+    }
+
+    button {
+        margin: 0 3% 3% 3%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #header-yarnsy {
+        visibility: hidden;
+        height: 0%;
+        width: 0%;
+    }
+
+    header h1 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .introduction h3 {
+        font-size: 6vw;
+    }
 }

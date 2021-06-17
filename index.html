@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <title>Yarnsworth's Tales of Faerun's Fabled</title>
 </head>
@@ -12,12 +13,11 @@
 <body>
     <header>
         <h1>Yarnsworth's Tales of Faerun's Fabled</h1>
-        <img src="assets/images/yarnsworth-transparent.png"
-            alt="The fictional character Yarnsworth, a cat-man, grins in a shirt that reads 'bard life.'" />
+        <img id="header-yarnsy" src="assets/images/yarnsworth-transparent.png" alt="The fictional character Yarnsworth, a cat-man, grins in a shirt that reads 'bard life.'" />
     </header>
     <div class = "container">
         <div class = "row">
-            <div class = "col">
+            <div class = "col-12 col-sm-12 col-md-7 col-lg-9">
                 <article class="introduction">
                     <h3><span class="early-line-style">The name's Yarnsworth.</span></h3>
                     <p>Yours truly has heard tell of heroes and heraldry beyond compare. Now, be <em>dazzled</em> as I spin for you one such yarn!</p>
@@ -26,14 +26,14 @@
                     <p><span class="early-line-style">I've heard tell</span> of a <span id="hero-adj"></span> <span class="race"></span> <span class="class"></span> who set off to <span id="verb"></span> a <span id="monster-adj"></span> <span id="monster"></span> in the name of <span id="value"></span>.</p>
                     <p><span class="early-line-style">What became</span> of this <span class="race"></span> <span class="class"></span>? Adventure forth and learn for yourself!</p>
                 </article>
+                <div class="button-container">
+                    <button id="another-yarnsy" class="early-line-style">Tell me another, Yarnsy!</button>
+                </div>
             </div>
-            <div class = "col">
-                
+            <div id= "container-yarnsy" class = "col-md-5 col-lg-3">
+                <img id="body-yarnsy" src="assets/images/yarnsworth-transparent.png" alt="The fictional character Yarnsworth, a cat-man, grins in a shirt that reads 'bard life.'" />
             </div>
         </div>
-    </div>
-    <div class="button-container">
-        <button id="another-yarnsy" class="early-line-style">Tell me another, Yarnsy!</button>
     </div>
     <footer>
         <p><a href = "https://rrcampbell-exe.github.io/" target="_blank">&copy;2021 Ryan R. Campbell</a></p>

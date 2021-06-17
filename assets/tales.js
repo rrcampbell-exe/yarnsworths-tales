@@ -142,3 +142,19 @@ heroData();
 verbChoice();
 monsterData();
 delayFunction();
+
+// Media Queries for Page Content
+
+// var headerYarnsy = document.body.querySelector("#header-yarnsy")
+// var bodyYarnsy = document.body.querySelector("#body-yarnsy")
+
+// function yarnsyToggle(x) {
+//     if (x.matches) {
+//         document.body.headerYarnsy.remove()
+//         // bodyYarnsy.style.visibility = "visible";
+//     }
+// };
+
+// var x = window.matchMedia("(max-width: 768px)")
+// yarnsyToggle(x);
+// x.addEventListener(yarnsyToggle);

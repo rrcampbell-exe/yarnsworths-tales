@@ -78,12 +78,8 @@ body {
     font-size:larger;
 }
 
-.container #body-yarnsy {
-    align-items: end;
-}
-
 #body-yarnsy {
-    max-width: 100%;
+    max-width: 115%;
     object-fit: cover;
 }
 

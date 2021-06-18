@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    font-family: Luminari; 
+    font-family: 'Luminari', 'Mate SC', serif; 
     padding: 1.5%;
     text-shadow: 0 0 1px white;
     color: var(--primary-color)
@@ -72,7 +72,7 @@ body {
 }
 
 .early-line-style {
-    font-family: Luminari;
+    font-family: 'Luminari', 'Mate SC', serif; 
     color: var(--primary-color);
     text-shadow: 0 0 2px white;
     font-size:larger;
@@ -81,6 +81,12 @@ body {
 #body-yarnsy {
     max-width: 115%;
     object-fit: cover;
+    transition-duration: 0.3s;
+}
+
+#body-yarnsy:hover {
+    transform: scale(1.05); 
+    transition-duration: 0.3s;
 }
 
 .button-container {
@@ -108,7 +114,7 @@ button:hover {
 /* Footer Style */
 
 footer p {
-    font-family: Luminari;
+    font-family: 'Luminari', 'Mate SC', serif; 
     text-align: center; 
 }
 

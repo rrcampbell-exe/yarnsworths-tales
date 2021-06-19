@@ -1,0 +1,149 @@
+// FUNCTION TO GENERATE HERO DATA
+
+let heroData = function () {
+
+    // function to establish adjective for hero
+    {
+        let heroAdj = document.querySelector("#hero-adj")
+        let randomIndex = Math.floor(Math.random() * heroAdjSet.length)
+        heroAdj.textContent = heroAdjSet[randomIndex];
+    };
+
+    // function to establish hero race
+    let apiRace = "https://www.dnd5eapi.co/api/races/"
+    let race = document.querySelectorAll(".race");
+
+    fetch(apiRace)
+        .then(res => res.json())
+        .then(data => {
+            let randomIndex = Math.floor(Math.random() * data.results.length)
+            race.forEach(node => {
+                node.textContent = data.results[randomIndex].index;
+            });
+            console.log(data);
+        })
+
+    // function to establish hero class
+    let apiClass = "https://www.dnd5eapi.co/api/classes/"
+    let heroClass = document.querySelectorAll(".class")
+
+    fetch(apiClass)
+        .then(res => res.json())
+        .then(data => {
+            let randomIndex = Math.floor(Math.random() * data.results.length)
+            heroClass.forEach(node => {
+                node.textContent = data.results[randomIndex].index;
+            });
+            console.log(data)
+        })
+
+    // function to establish hero's value
+    let value = document.querySelector("#value")
+    let randomIndex = Math.floor(Math.random() * valueSet.length)
+    value.textContent = valueSet[randomIndex];
+
+    // cascading logic if "vengeance" is chosen as hero's value
+    if (valueSet[randomIndex] === "vengeance") {
+        let randomIndex = Math.floor(Math.random() * venge.length)
+        value.textContent += venge[randomIndex];
+    };
+
+    // cascading logic if "faith" is chosen as hero's value
+    if (valueSet[randomIndex] === "faith") {
+        let randomIndex = Math.floor(Math.random() * gods.length)
+        value.textContent = gods[randomIndex];
+    };
+
+    // cascading logic if "loyalty" is chosen as hero's value
+    if (valueSet[randomIndex] === "loyalty") {
+        let randomIndex = Math.floor(Math.random() * loyalties.length)
+        value.textContent += loyalties[randomIndex];
+    };
+};
+
+// FUNCTION TO SELECT VERB
+
+let verbChoice = function () {
+    let verb = document.querySelector("#verb")
+    let randomIndex = Math.floor(Math.random() * verbSet.length)
+    verb.textContent = verbSet[randomIndex];
+};
+
+// FUNCTION TO GENERATE MONSTER DATA
+
+let monsterData = function () {
+    // function to establish adjective for monster
+    {
+        // let monsterAdjSelect = Match.ceil(Math.random() * monsterAdjSet.length)
+        let monsterAdj = document.querySelector("#monster-adj")
+        let randomIndex = Math.floor(Math.random() * monsterAdjSet.length)
+        console.log(randomIndex)
+        monsterAdj.textContent = monsterAdjSet[randomIndex];
+        console.log(monsterAdjSet[randomIndex]);
+    };
+    // function to establish monster
+    let apiMonster = "https://www.dnd5eapi.co/api/monsters/"
+    let monster = document.querySelector("#monster")
+
+    fetch(apiMonster)
+        .then(res => res.json())
+        .then(data => {
+            let randomIndex = Math.floor(Math.random() * data.results.length)
+            monster.textContent = data.results[randomIndex].name.toLowerCase();
+            console.log(data)
+        })
+};
+
+// functions to affect visibility of story content on page load and on button click
+let taleVisibility = function () {
+    let taleContent = document.querySelectorAll(".tale-intro p")
+    taleContent.forEach(node => {
+        node.style.visibility = "visible"
+    })
+};
+
+let taleInvisibility = function () {
+    let taleContent = document.querySelectorAll(".tale-intro p")
+    taleContent.forEach(node => {
+        node.style.visibility = "hidden"
+    })
+};
+
+// function to delay appearance of story text
+let delayFunction = function () {
+    setTimeout(taleVisibility, 250);
+};
+
+// function to generate new tale on button click
+var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
+tellMeAnotherYarnsyEl.addEventListener("click", () => {
+    taleInvisibility();
+    heroData();
+    verbChoice();
+    monsterData();
+    delayFunction();
+});
+
+// RUNNING OF FUNCTIONS
+
+taleInvisibility();
+heroData();
+verbChoice();
+monsterData();
+delayFunction();
+
+// Media Queries for Page Content
+
+// var headerYarnsy = document.body.querySelector("#header-yarnsy")
+// var bodyYarnsy = document.body.querySelector("#body-yarnsy")
+
+// function yarnsyToggle(x) {
+//     if (x.matches) {
+//         document.body.headerYarnsy.remove()
+//         // bodyYarnsy.style.visibility = "visible";
+//     }
+// };
+
+// var x = window.matchMedia("(max-width: 768px)")
+// yarnsyToggle(x);
+// x.addEventListener(yarnsyToggle);

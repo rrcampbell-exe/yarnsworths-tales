@@ -98,6 +98,7 @@ let monsterData = function () {
 let taleVisibility = function () {
     let taleContent = document.querySelectorAll(".tale-intro p")
     taleContent.forEach(node => {
+        $(taleContent).fadeIn(500);
         node.style.visibility = "visible"
     })
 };
@@ -105,23 +106,24 @@ let taleVisibility = function () {
 let taleInvisibility = function () {
     let taleContent = document.querySelectorAll(".tale-intro p")
     taleContent.forEach(node => {
+        $(taleContent).fadeOut(500);
         node.style.visibility = "hidden"
     })
 };
 
 // function to delay appearance of story text
 let delayFunction = function () {
-    setTimeout(taleVisibility, 250);
+    setTimeout(taleVisibility, 500);
 };
 
 // function to generate new tale on button click
 var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
 tellMeAnotherYarnsyEl.addEventListener("click", () => {
     taleInvisibility();
+    delayFunction();
     heroData();
     verbChoice();
     monsterData();
-    delayFunction();
 });
 
 // RUNNING OF FUNCTIONS

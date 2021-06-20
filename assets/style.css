@@ -119,8 +119,15 @@ footer p {
     text-align: center; 
 }
 
-footer a, footer a:visited {
+footer a:visited {
+    color: black;
     text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
     transition-duration: 0.3s;
 }
 

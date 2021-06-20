@@ -98,7 +98,7 @@ let monsterData = function () {
 let taleVisibility = function () {
     let taleContent = document.querySelectorAll(".tale-intro p")
     taleContent.forEach(node => {
-        $(taleContent).fadeIn(500);
+        $(taleContent).fadeIn(1000);
         node.style.visibility = "visible"
     })
 };

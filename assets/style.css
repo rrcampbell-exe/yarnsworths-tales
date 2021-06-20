@@ -140,7 +140,8 @@ footer a:hover {
 
 @media screen and (max-width: 767px) {
     #body-yarnsy {
-        visibility: hidden;
+        display: none;
+        /* visibility: hidden; */
         height: 0%;
         width: 0%;
     }
@@ -162,7 +163,8 @@ footer a:hover {
 
 @media screen and (min-width: 768px) {
     #header-yarnsy {
-        visibility: hidden;
+        display: none;
+        /* visibility: hidden; */
         height: 0%;
         width: 0%;
     }

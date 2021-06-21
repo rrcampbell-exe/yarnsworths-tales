@@ -17,20 +17,48 @@ let heroData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
-            race.forEach(node => {
-                if (randomIndex < data.results.length) {
-                    node.textContent = data.results[randomIndex].index 
-                    if (data.results[randomIndex].index = "elf") 
-                        subRaceIndex = Math.floor(Math.random() * elfSubrace.length)
-                        node.textContent = elfSubrace[subRaceIndex] + " " + data.results[randomIndex].index 
-                    if (data.results[randomIndex].index = "dwarf")
-                        node.textContent = data.results[randomIndex].index 
-                } else {
-                    let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
-                    node.textContent = uncommonRaces[uncommonRaceIndex]
-                }
-            });
-            console.log(data);
+            console.log(data.results[randomIndex].index)
+            switch (data.results[randomIndex].index) {
+                case "dragonborn":
+                case "half-elf":
+                case "half-orc":
+                case "human":
+                case "tiefling":
+                    race.forEach(node => {
+                        node.textContent = data.results[randomIndex].index; 
+                    })
+                    break;
+                case "elf":
+                    race.forEach(node => {
+                        subRaceIndex = Math.floor(Math.random() * elfSubrace.length);
+                        node.textContent = elfSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
+                    })
+                    break;
+                case "dwarf":
+                    race.forEach(node => {
+                        subRaceIndex = Math.floor(Math.random() * dwarfSubrace.length);
+                        node.textContent = dwarfSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
+                    })
+                    break;
+                case "gnome":
+                    race.forEach(node => {
+                        subRaceIndex = Math.floor(Math.random() * gnomeSubrace.length);
+                        node.textContent = gnomeSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
+                    })
+                    break;
+                case "halfling":
+                    race.forEach(node => {
+                        subRaceIndex = Math.floor(Math.random() * halflingSubrace.length);
+                        node.textContent = halflingSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
+                    })
+                    break;
+                default:
+                    race.forEach(node => {    
+                    let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length);
+                    node.textContent = uncommonRaces[uncommonRaceIndex];
+                    })
+                    break;
+            }
         })
 
     // function to establish hero class

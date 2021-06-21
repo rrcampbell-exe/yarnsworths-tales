@@ -35,9 +35,14 @@ let heroData = function () {
     fetch(apiClass)
         .then(res => res.json())
         .then(data => {
-            let randomIndex = Math.floor(Math.random() * data.results.length)
+            let randomIndex = Math.floor(Math.random() * (data.results.length +1))
             heroClass.forEach(node => {
-                node.textContent = data.results[randomIndex].index;
+                if (randomIndex < data.results.length) {
+                    node.textContent = data.results[randomIndex].index;
+                } else {
+                    let uncommonClassIndex = Math.floor(Math.random() * uncommonClasses.length)
+                    node.textContent = uncommonClasses[uncommonClassIndex]
+                }
             });
             console.log(data)
         })

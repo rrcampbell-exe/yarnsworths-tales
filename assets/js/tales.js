@@ -22,7 +22,9 @@ let heroData = function () {
                     node.textContent = data.results[randomIndex].index;
                 } else {
                     let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
-                    node.textContent = uncommonRaces[uncommonRaceIndex]
+                    race.forEach(node => {
+                        node.textContent = uncommonRaces[uncommonRaceIndex]
+                    })
                 }
             });
             console.log(data);

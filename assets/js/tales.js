@@ -116,10 +116,22 @@ let delayFunction = function () {
     setTimeout(taleVisibility, 500);
 };
 
+// function to slide Yarnsworth from sidebar and into tale content on button click (tablet and larger devices only)
+let yarnsyShake = function() {
+    $( "#container-yarnsy" ).effect( "shake", {times:1}, 500)
+}
+
+let talesShake = function () {
+    $ ( "#tale-intro" ).effect( "puff" )
+    $ ( "#tale-intro" ).show( "fast" );
+}
+
 // function to generate new tale on button click
 var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
 tellMeAnotherYarnsyEl.addEventListener("click", () => {
     taleInvisibility();
+    yarnsyShake();
+    talesShake();
     delayFunction();
     heroData();
     verbChoice();
@@ -133,19 +145,3 @@ heroData();
 verbChoice();
 monsterData();
 delayFunction();
-
-// Media Queries for Page Content
-
-// var headerYarnsy = document.body.querySelector("#header-yarnsy")
-// var bodyYarnsy = document.body.querySelector("#body-yarnsy")
-
-// function yarnsyToggle(x) {
-//     if (x.matches) {
-//         document.body.headerYarnsy.remove()
-//         // bodyYarnsy.style.visibility = "visible";
-//     }
-// };
-
-// var x = window.matchMedia("(max-width: 768px)")
-// yarnsyToggle(x);
-// x.addEventListener(yarnsyToggle);

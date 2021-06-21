@@ -105,6 +105,9 @@ let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", 
 
 // CASCADING LOGIC
 
+    // uncommon races logic    
+    let uncommonRaces = ["leonin", "satyr", "aarakocra", "genasi", "goliath", "aasimar", "bugbear", "firbolg", "goblin", "hobgoblin", "kenku", "kobold", "lizardfolk", "orc", "tabaxi", "triton", "yuan-ti"]
+
     // vengeance cascading logic
     let venge = [" for their lover's death", " for their brother's murder", " for the disappearance of their beloved pet", " for a most grotesque public embarassment", " for the most salacious of gossipmongering", " for a betrayal of unspeakable devilry", " for an incurable curse bestowed upon their family", " for a most foul disrespect cast upon their liege lord", " for having sullied the virtue of their betrothed", " for a most disgusting act", " for a deceit of unfathomable consequence", " for an act of guile ill-conceived", ""]
 

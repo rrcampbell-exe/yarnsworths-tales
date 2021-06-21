@@ -16,9 +16,14 @@ let heroData = function () {
     fetch(apiRace)
         .then(res => res.json())
         .then(data => {
-            let randomIndex = Math.floor(Math.random() * data.results.length)
+            let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
             race.forEach(node => {
-                node.textContent = data.results[randomIndex].index;
+                if (randomIndex < data.results.length) {
+                    node.textContent = data.results[randomIndex].index;
+                } else {
+                    let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
+                    node.textContent = uncommonRaces[uncommonRaceIndex]
+                }
             });
             console.log(data);
         })

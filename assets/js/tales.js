@@ -19,7 +19,12 @@ let heroData = function () {
             let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
             race.forEach(node => {
                 if (randomIndex < data.results.length) {
-                    node.textContent = data.results[randomIndex].index;
+                    node.textContent = data.results[randomIndex].index 
+                    if (data.results[randomIndex].index = "elf") 
+                        subRaceIndex = Math.floor(Math.random() * elfSubrace.length)
+                        node.textContent = elfSubrace[subRaceIndex] + " " + data.results[randomIndex].index 
+                    if (data.results[randomIndex].index = "dwarf")
+                        node.textContent = data.results[randomIndex].index 
                 } else {
                     let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
                     node.textContent = uncommonRaces[uncommonRaceIndex]

@@ -106,8 +106,11 @@ let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", 
 // CASCADING LOGIC
 
     // uncommon races logic    
-    let uncommonRaces = ["leonin", "satyr", "aarakocra", "genasi", "goliath", "aasimar", "bugbear", "firbolg", "goblin", "hobgoblin", "kenku", "kobold", "lizardfolk", "orc", "tabaxi", "triton", "yuan-ti"]
+    let uncommonRaces = ["leonin", "satyr", "aarakocra", "genasi", "goliath", "aasimar", "bugbear", "firbolg", "goblin", "hobgoblin", "kenku", "kobold", "lizardfolk", "orc", "tabaxi", "triton", "yuan-ti", "tortle"]
 
+    // subraces logic
+    let elfSubrace = ["high", "wood", "dark"]
+    
     // uncommon classes logic
     let uncommonClasses = ["artificer"]
     

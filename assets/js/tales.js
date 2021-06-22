@@ -101,10 +101,12 @@ let monsterData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.results.length)
-            monster.textContent = data.results[randomIndex].name.toLowerCase();
-            console.log(data.results[randomIndex].name)
-            // let monsterText = monster.textContent = data.results[randomIndex].name.toLowerCase();
-            // monsterText = monsterText.split(",")[0] // works when tested in console, possible that argument being taken isn't a string
+            let monsterText = data.results[randomIndex].name.toLowerCase() 
+            if(monsterText.includes(",")){
+                monster.textContent = monsterText.split(',')[0]
+            }else {
+                monster.textContent = monsterText
+            }
         })
 };
 

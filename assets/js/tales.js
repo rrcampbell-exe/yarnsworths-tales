@@ -17,8 +17,8 @@ let heroData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
-            console.log(data.results[randomIndex].index)
-            switch (data.results[randomIndex].index) {
+            console.log(data.results[randomIndex]?.index)
+            switch (data.results[randomIndex]?.index) {
                 case "dragonborn":
                 case "half-elf":
                 case "half-orc":

@@ -27,7 +27,6 @@ let heroData = function () {
                     })
                 }
             });
-            console.log(data);
         })
 
     // function to establish hero class
@@ -46,7 +45,6 @@ let heroData = function () {
                     node.textContent = uncommonClasses[uncommonClassIndex]
                 }
             });
-            console.log(data)
         })
 
     // function to establish hero's value
@@ -89,9 +87,7 @@ let monsterData = function () {
         // let monsterAdjSelect = Match.ceil(Math.random() * monsterAdjSet.length)
         let monsterAdj = document.querySelector("#monster-adj")
         let randomIndex = Math.floor(Math.random() * monsterAdjSet.length)
-        console.log(randomIndex)
         monsterAdj.textContent = monsterAdjSet[randomIndex];
-        console.log(monsterAdjSet[randomIndex]);
     };
     // function to establish monster
     let apiMonster = "https://www.dnd5eapi.co/api/monsters/"
@@ -102,9 +98,9 @@ let monsterData = function () {
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.results.length)
             let monsterText = data.results[randomIndex].name.toLowerCase() 
-            if(monsterText.includes(",")){
+            if (monsterText.includes(",")) {
                 monster.textContent = monsterText.split(',')[0]
-            }else {
+            } else {
                 monster.textContent = monsterText
             }
         })
@@ -142,10 +138,6 @@ let talesShake = function () {
     $ ( "#tale-intro" ).show( "fast" );
 }
 
-function monsterTextElide() {
-    document.querySelector("#monster").innerHTML.split(",")[0] // works when tested in console, possible that argument being taken isn't a string
-}
-
 // function to generate new tale on button click
 var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
 tellMeAnotherYarnsyEl.addEventListener("click", () => {
@@ -156,8 +148,6 @@ tellMeAnotherYarnsyEl.addEventListener("click", () => {
     heroData();
     verbChoice();
     monsterData();
-    console.log(document.querySelector("#monster").innerHTML)
-    monsterTextElide();
 });
 
 // RUNNING OF FUNCTIONS
@@ -166,6 +156,4 @@ taleInvisibility();
 heroData();
 verbChoice();
 monsterData();
-console.log(document.querySelector("#monster").innerHTML)
-monsterTextElide();
 delayFunction();

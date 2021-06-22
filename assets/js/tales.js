@@ -25,7 +25,7 @@ let heroData = function () {
                 case "human":
                 case "tiefling":
                     race.forEach(node => {
-                        node.textContent = data.results[randomIndex].index; 
+                        node.textContent = data.results[randomIndex].index;
                     })
                     break;
                 case "elf":
@@ -53,7 +53,7 @@ let heroData = function () {
                     })
                     break;
                 default:
-                    race.forEach(node => {    
+                    race.forEach(node => {
                         let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
                         node.textContent = uncommonRaces[uncommonRaceIndex];
                         console.log(uncommonRaces[uncommonRaceIndex]);
@@ -69,7 +69,7 @@ let heroData = function () {
     fetch(apiClass)
         .then(res => res.json())
         .then(data => {
-            let randomIndex = Math.floor(Math.random() * (data.results.length +1))
+            let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
             heroClass.forEach(node => {
                 if (randomIndex < data.results.length) {
                     node.textContent = data.results[randomIndex].index;
@@ -122,7 +122,6 @@ let monsterData = function () {
         let randomIndex = Math.floor(Math.random() * monsterAdjSet.length)
         console.log(randomIndex)
         monsterAdj.textContent = monsterAdjSet[randomIndex];
-        console.log(monsterAdjSet[randomIndex]);
     };
     // function to establish monster
     let apiMonster = "https://www.dnd5eapi.co/api/monsters/"
@@ -132,7 +131,13 @@ let monsterData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.results.length)
-            monster.textContent = data.results[randomIndex].name.toLowerCase();
+            let monsterText = data.results[randomIndex].name.toLowerCase()
+            console.log(monsterText)
+            if (monsterText.includes(",")) {
+                monster.textContent = monsterText.split(',')[0]
+            } else {
+                monster.textContent = monsterText
+            }
         })
 };
 
@@ -159,13 +164,13 @@ let delayFunction = function () {
 };
 
 // function to slide Yarnsworth from sidebar and into tale content on button click (tablet and larger devices only)
-let yarnsyShake = function() {
-    $( "#container-yarnsy" ).effect( "shake", {times:1}, 500)
+let yarnsyShake = function () {
+    $("#container-yarnsy").effect("shake", { times: 1 }, 500)
 }
 
 let talesShake = function () {
-    $ ( "#tale-intro" ).effect( "puff" )
-    $ ( "#tale-intro" ).show( "fast" );
+    $("#tale-intro").effect("puff")
+    $("#tale-intro").show("fast");
 }
 
 // function to generate new tale on button click

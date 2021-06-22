@@ -54,8 +54,9 @@ let heroData = function () {
                     break;
                 default:
                     race.forEach(node => {    
-                    let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length);
-                    node.textContent = uncommonRaces[uncommonRaceIndex];
+                        let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
+                        node.textContent = uncommonRaces[uncommonRaceIndex];
+                        console.log(uncommonRaces[uncommonRaceIndex]);
                     })
                     break;
             }
@@ -77,7 +78,6 @@ let heroData = function () {
                     node.textContent = uncommonClasses[uncommonClassIndex]
                 }
             });
-            console.log(data)
         })
 
     // function to establish hero's value
@@ -133,7 +133,6 @@ let monsterData = function () {
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.results.length)
             monster.textContent = data.results[randomIndex].name.toLowerCase();
-            console.log(data)
         })
 };
 

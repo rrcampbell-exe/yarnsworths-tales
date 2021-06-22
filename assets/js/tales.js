@@ -103,12 +103,10 @@ let monsterData = function () {
             let randomIndex = Math.floor(Math.random() * data.results.length)
             monster.textContent = data.results[randomIndex].name.toLowerCase();
             console.log(data.results[randomIndex].name)
-            let monsterText = monster.textContent = data.results[randomIndex].name.toLowerCase();
-            monsterText = monsterText.split(",")[0] // works when tested in console, possible that argument being taken isn't a string
+            // let monsterText = monster.textContent = data.results[randomIndex].name.toLowerCase();
+            // monsterText = monsterText.split(",")[0] // works when tested in console, possible that argument being taken isn't a string
         })
 };
-
-
 
 // functions to affect visibility of story content on page load and on button click
 let taleVisibility = function () {
@@ -142,6 +140,10 @@ let talesShake = function () {
     $ ( "#tale-intro" ).show( "fast" );
 }
 
+function monsterTextElide() {
+    document.querySelector("#monster").innerHTML.split(",")[0] // works when tested in console, possible that argument being taken isn't a string
+}
+
 // function to generate new tale on button click
 var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
 tellMeAnotherYarnsyEl.addEventListener("click", () => {
@@ -152,6 +154,8 @@ tellMeAnotherYarnsyEl.addEventListener("click", () => {
     heroData();
     verbChoice();
     monsterData();
+    console.log(document.querySelector("#monster").innerHTML)
+    monsterTextElide();
 });
 
 // RUNNING OF FUNCTIONS
@@ -160,4 +164,6 @@ taleInvisibility();
 heroData();
 verbChoice();
 monsterData();
+console.log(document.querySelector("#monster").innerHTML)
+monsterTextElide();
 delayFunction();

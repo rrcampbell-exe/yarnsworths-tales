@@ -17,49 +17,16 @@ let heroData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
-            console.log(data.results[randomIndex]?.index)
-            switch (data.results[randomIndex]?.index) {
-                case "dragonborn":
-                case "half-elf":
-                case "half-orc":
-                case "human":
-                case "tiefling":
+            race.forEach(node => {
+                if (randomIndex < data.results.length) {
+                    node.textContent = data.results[randomIndex].index;
+                } else {
+                    let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
                     race.forEach(node => {
-                        node.textContent = data.results[randomIndex].index;
+                        node.textContent = uncommonRaces[uncommonRaceIndex]
                     })
-                    break;
-                case "elf":
-                    race.forEach(node => {
-                        subRaceIndex = Math.floor(Math.random() * elfSubrace.length);
-                        node.textContent = elfSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
-                    })
-                    break;
-                case "dwarf":
-                    race.forEach(node => {
-                        subRaceIndex = Math.floor(Math.random() * dwarfSubrace.length);
-                        node.textContent = dwarfSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
-                    })
-                    break;
-                case "gnome":
-                    race.forEach(node => {
-                        subRaceIndex = Math.floor(Math.random() * gnomeSubrace.length);
-                        node.textContent = gnomeSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
-                    })
-                    break;
-                case "halfling":
-                    race.forEach(node => {
-                        subRaceIndex = Math.floor(Math.random() * halflingSubrace.length);
-                        node.textContent = halflingSubrace[subRaceIndex] + " " + data.results[randomIndex].index;
-                    })
-                    break;
-                default:
-                    race.forEach(node => {
-                        let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length);
-                        node.textContent = uncommonRaces[uncommonRaceIndex];
-                        console.log(uncommonRaces[uncommonRaceIndex]);
-                    })
-                    break;
-            }
+                }
+            });
         })
 
     // function to establish hero class
@@ -69,7 +36,7 @@ let heroData = function () {
     fetch(apiClass)
         .then(res => res.json())
         .then(data => {
-            let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
+            let randomIndex = Math.floor(Math.random() * (data.results.length +1))
             heroClass.forEach(node => {
                 if (randomIndex < data.results.length) {
                     node.textContent = data.results[randomIndex].index;
@@ -162,13 +129,13 @@ let delayFunction = function () {
 };
 
 // function to slide Yarnsworth from sidebar and into tale content on button click (tablet and larger devices only)
-let yarnsyShake = function () {
-    $("#container-yarnsy").effect("shake", { times: 1 }, 500)
+let yarnsyShake = function() {
+    $( "#container-yarnsy" ).effect( "shake", {times:1}, 500)
 }
 
 let talesShake = function () {
-    $("#tale-intro").effect("puff")
-    $("#tale-intro").show("fast");
+    $ ( "#tale-intro" ).effect( "puff" )
+    $ ( "#tale-intro" ).show( "fast" );
 }
 
 // function to generate new tale on button click

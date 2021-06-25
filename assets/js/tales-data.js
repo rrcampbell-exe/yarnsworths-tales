@@ -57,7 +57,7 @@ let posAdjSet =
 "beautiful","beneficial",
 "charming","cheerful","chivalrous","clever","courageous","cuddly","cultured","cute",
 "dashing","dazzling","decorous","delicious","delightful",
-"eager","early","earsplitting","earthy","easy","eatable","economic","educated","efficacious","efficient","eight","elastic","elated","elderly","electric","elegant","elfin","elite","embarrassed","eminent","empty","enchanted","enchanting","encouraging","endurable","energetic","enormous","entertaining","enthusiastic","envious","equable","equal","erect","erratic","ethereal","evanescent","evasive","even", "excellent", "excited", "exciting", "exclusive", "exotic", "expensive", "extra-large", "extra-small", "exuberant", "exultant", 
+"educated","efficacious","efficient","elegant","elite","eminent","enchanting","excellent", "excited", "exciting", "exclusive", "exotic", "expensive", "extra-large", "extra-small", "exuberant", "exultant", 
 "fabulous", "faded", "faint", "fair", "faithful", "fallacious", "false", "familiar", "famous", "fanatical", "fancy", "fantastic", "far"," far-flung","fascinated", "fast", "fat", "faulty", "fearful",  "fearless", "feeble", "feigned", "female", "fertile", "festive", "few", "fierce", "filthy", "fine", "finicky", "first", "five", "fixed", "flagrant", "flaky"," flashy", "flat", "flawless", "flimsy", "flippant", "flowery", "fluffy", "fluttering", "foamy", "foolish", "foregoing", "forgetful", "fortunate", "four", "frail", "fragile", "frantic", "free", "freezing", "frequent", "fresh", "fretful", "friendly", "frightened", "frightening", "full",  "fumbling", "functional", "funny", "furry", "furtive", "future", "futuristic", "fuzzy", 
 "gabby", "gainful", "gamy", "gaping", "garrulous", "gaudy", "general", "gentle","giant","giddy","gifted","gigantic","glamorous","gleaming","glib","glistening",  "glorious","glossy","godly","good","goofy","gorgeous","graceful","grandiose","grateful", "gratis", "gray", "greasy", "great", "greedy", "green", "grey", "grieving", "groovy", "grotesque", "grouchy", "grubby", "gruesome", "grumpy", "guarded", "guiltless", "gullible", "gusty", "guttural", 
 "habitual","half","hallowed","halting","handsome","handsomely","handy","hanging","hapless","happy","hard","hard-to-find","harmonious","harsh","hateful","heady","healthy","heartbreaking","heavenly", "heavy", "hellish", "helpful", "helpless", "hesitant", "hideous", "high", "highfalutin", "high-pitched","hilarious","hissing","historical","holistic","hollow","homeless","homely","honorable","horrible","hospitable","hot",  "huge","hulking","humdrum","humorous","hungry","hurried","hurt","hushed","husky","hypnotic","hysterical",
@@ -85,6 +85,7 @@ let negAdjSet =
 "bad","barbarous","bawdy","boorish","broken",
 "calculating","callous","chilly","cold","combative","condemned","cowardly","crabby","craven","creepy","crooked","cruel","cumbersome","cynical",
 "deranged","devilish","direful","dirty","disagreeable","disastrous","disgusting","draconian","dreary",
+"envious",
 ]
 
 let neutAdjSet = 
@@ -92,6 +93,7 @@ let neutAdjSet =
 "bashful","bent","berserk","befitting","belligerent","bewildered","big","billowy","bite-sized","bitter","bizarre","black","black-and-white","bloody","blue","blue-eyed","blushing","boiling","bored","boring","bouncy","boundless","brainy","brash","brave","brawny","breakable","breezy","brief","bright","broad","brown","bumpy","burly","bustling","busy",
 "cagey","calm","capable","capricious","careful","careless","caring","cautious","ceaseless","certain","changeable","cheap","chemical","chief","childlike","chubby","chunky","clammy","classy","clean","clear","cloistered","cloudy","closed","clumsy","cluttered","coherent","colorful","colossal","comfortable","common","complete","complex","concerned","confused","conscious","cooing","cool","cooperative","coordinated","crazy","crowded","curious","curly","curved","curvy","cut",
 "daffy","damaged","damaging","damp","dangerous","dapper","dark","dead","deadpan","deafening","dear","debonair","decisive","deep","defeated","defective","defiant","delicate","demonic","delirious","dependent","depressed","descriptive","deserted","detailed","determined","didactic","different","difficult","diligent","discreet","disgusted","disillusioned","dispensable","distinct","disturbed","divergent","dizzy","domineering","doubtful","drab","dramatic","drunk","dry","dull","dusty","dynamic","dysfunctional",
+"eager","early","earsplitting","earthy","easy","eatable","economic","elastic","elated","elderly","electric","elfin","embarrassed","empty","enchanted","encouraging","endurable","energetic","enormous","entertaining","enthusiastic","equable","equal","erect","erratic","ethereal","evanescent","evasive","even",
 ]
 
 let superAdjSet = ["best",]

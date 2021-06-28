@@ -52,6 +52,8 @@ let masterAdjIndefSet =
 "zany","zealous","zesty","zippy","zonked"
 ]
 
+// POSITIVE ADJECTIVE SETS
+
 let posAdjSet = 
 ["absorbing","adorable","alluring","amazing","astonishing","attractive","auspicious","awesome",
 "beautiful","beneficial",
@@ -59,10 +61,10 @@ let posAdjSet =
 "dashing","dazzling","decorous","delicious","delightful",
 "educated","efficacious","efficient","elegant","elite","eminent","enchanting","excellent", "exciting", "exclusive","exultant", 
 "fabulous", "fair", "faithful", "fantastic","fascinating","fearless","fine","flashy", "flawless", "fortunate", "fresh", "friendly", 
-"gabby", "gainful", "gamy", "gaping", "garrulous", "gaudy", "general", "gentle","giant","giddy","gifted","gigantic","glamorous","gleaming","glib","glistening",  "glorious","glossy","godly","good","goofy","gorgeous","graceful","grandiose","grateful", "gratis", "gray", "greasy", "great", "greedy", "green", "grey", "grieving", "groovy", "grotesque", "grouchy", "grubby", "gruesome", "grumpy", "guarded", "guiltless", "gullible", "gusty", "guttural", 
-"habitual","half","hallowed","halting","handsome","handsomely","handy","hanging","hapless","happy","hard","hard-to-find","harmonious","harsh","hateful","heady","healthy","heartbreaking","heavenly", "heavy", "hellish", "helpful", "helpless", "hesitant", "hideous", "high", "highfalutin", "high-pitched","hilarious","hissing","historical","holistic","hollow","homeless","homely","honorable","horrible","hospitable","hot",  "huge","hulking","humdrum","humorous","hungry","hurried","hurt","hushed","husky","hypnotic","hysterical",
-"icky","icy","idiotic","ignorant","ill","illegal","ill-fated","ill-informed","illustrious","imaginary","immense","imminent","impartial","imperfect","impolite","important","imported","impossible","incandescent","incompetent","inconclusive","industrious","incredible","inexpensive","infamous","innate","innocent","inquisitive","insidious","instinctive","intelligent","interesting","internal","invincible","irate","irritating","itchy",
-"jaded","jagged","jazzy","jealous","jittery","jobless","jolly","joyous","judicious","juicy","jumbled","jumpy","juvenile",
+"gainful", "gifted","glamorous","gleaming","glistening","glorious","godly","good","gorgeous","graceful","grateful", "great", 
+"hallowed","handsome","handsomely","handy","happy","harmonious","healthy","heavenly", "helpful", "hilarious","honorable","humorous","hysterical",
+"illustrious","industrious","incredible","intelligent","interesting","invincible",
+"jolly","joyous","judicious",
 "kaput","keen","kind","kindhearted","kindly","knotty","knowing","knowledgeable","known",
 "labored","lackadaisical","lacking","lame","lamentable","languid","large","last","late","laughable","lavish","lazy","lean","learned","left","legal","lethal","level","lewd","light","like","likeable","limping","literate","little","lively","lively","living","lonely","long","longing","long-term","loose","lopsided","loud","loutish","lovely","loving","low","lowly","lucky","ludicrous","lumpy","lush","luxuriant","lying","lyrical",
 "macabre","macho","maddening","madly","magenta","magical","magnificent","majestic","makeshift","male","malicious","mammoth","maniacal","many","marked","massive","married","marvelous","material","materialistic","mature","mean","measly","meaty","medical","meek","mellow","melodic","melted","merciful","mere","messy","mighty","military","milky","mindless","miniature","minor","miscreant","misty","mixed","moaning","modern","moldy","momentous","motionless","mountainous","muddled","mundane","murky","mushy","mute","mysterious",
@@ -80,6 +82,23 @@ let posAdjSet =
 "yellow","yielding","young","youthful","yummy",
 "zany","zealous","zesty","zippy","zonked"]
 
+let posAdjSetPeople = 
+["absorbing","adorable","alluring","amazing","astonishing","attractive","auspicious","awesome",
+
+]
+
+let posAdjSetPlaces = 
+["alluring","amazing","astonishing","attractive","auspicious","awesome",
+
+]
+
+let posAdjSetThings = 
+["absorbing","adorable","alluring","amazing","astonishing","attractive","auspicious","awesome",
+
+]
+
+// NEGATIVE ADJECTIVE SETS
+
 let negAdjSet = 
 ["abhorrent","abject","abortive","abrasive","abusive","acrid","agonizing","annoying","arrogant","awful",
 "bad","barbarous","bawdy","boorish","broken",
@@ -87,7 +106,13 @@ let negAdjSet =
 "deranged","devilish","direful","dirty","disagreeable","disastrous","disgusting","draconian","dreary",
 "envious",
 "fallacious", "false","faulty","fearful","feeble", "feigned","filthy", "flagrant","flimsy", "flippant", "foolish", "frail","fretful","frightening","fumbling",  
+"garrulous", "gaudy", "general", "gentle","giant","giddy","glossy","grandiose","greedy", "grotesque", "grouchy", "grubby", "gruesome", "grumpy", "guttural", 
+"halting","hapless","harsh","hateful","heartbreaking","hellish", "hideous","highfalutin", "hissing","homely","horrible",
+"icky","icy","idiotic","ignorant","ill","illegal","ill-fated","ill-informed","impolite","incompetent","infamous","insidious","irate","irritating","itchy",
+"jaded","jealous","jumbled",
 ]
+
+// NEUTRAL ADJECTIVE SETS
 
 let neutAdjSet = 
 ["abandoned","abashed","aberrant","abiding","ablaze","able","abnormal","aboard","aboriginal","abounding","abrupt","absent","absorbed","abstracted","absurd","abundant","acceptable","accessible","accidental","accurate","acid","acidic","acoustic","adamant","adaptable","addicted","adhesive","adjoining","adventurous","afraid","aggressive","agreeable","ahead","ajar","alcoholic","alert","alike","alive","alleged","aloof","ambiguous","ambitious","amuck","amused","amusing","ancient","angry","animated","annoyed","anxious","apathetic","aquatic","aromatic","ashamed","aspiring","assorted","automatic","available","average","awake","aware","axiomatic",
@@ -96,6 +121,10 @@ let neutAdjSet =
 "daffy","damaged","damaging","damp","dangerous","dapper","dark","dead","deadpan","deafening","dear","debonair","decisive","deep","defeated","defective","defiant","delicate","demonic","delirious","dependent","depressed","descriptive","deserted","detailed","determined","didactic","different","difficult","diligent","discreet","disgusted","disillusioned","dispensable","distinct","disturbed","divergent","dizzy","domineering","doubtful","drab","dramatic","drunk","dry","dull","dusty","dynamic","dysfunctional",
 "eager","early","earsplitting","earthy","easy","eatable","economic","elastic","elated","elderly","electric","elfin","embarrassed","empty","enchanted","encouraging","endurable","energetic","enormous","entertaining","enthusiastic","equable","equal","erect","erratic","ethereal","evanescent","evasive","even","excited", "exotic", "expensive", "extra-large", "extra-small", "exuberant",  
 "faded", "faint", "familiar", "famous", "fanatical", "fancy", "far"," far-flung","fascinated", "fast", "fat", "female", "fertile", "festive", "few", "fierce", "finicky", "first", "five", "fixed","flaky","flat", "flowery", "fluffy", "fluttering", "foamy", "foregoing", "forgetful", "four", "fragile", "frantic", "free", "freezing", "frequent","frightened","full","functional", "funny", "furry", "furtive", "future", "futuristic", "fuzzy",     
+"gabby", "gamy", "gaping", "gigantic","glib","goofy","gratis", "gray", "greasy", "green", "grey", "grieving", "groovy", "guarded", "guiltless", "gullible", "gusty", 
+"habitual","half","hanging","hard","hard-to-find","heady","heavy", "helpless", "hesitant", "high", "high-pitched","historical","holistic","hollow","homeless","hospitable","hot","huge","hulking","humdrum","hungry","hurried","hurt","hushed","husky","hypnotic",
+"imaginary","immense","imminent","impartial","imperfect","important","imported","impossible","incandescent","inconclusive","inexpensive","innate","innocent","inquisitive","instinctive","internal",
+"jagged","jazzy","jittery","jobless","juicy","jumpy","juvenile",
 ]
 
 let superAdjSet = ["best",]

@@ -65,9 +65,9 @@ let posAdjSet =
 "hallowed","handsome","handsomely","handy","happy","harmonious","healthy","heavenly", "helpful", "hilarious","honorable","humorous","hysterical",
 "illustrious","industrious","incredible","intelligent","interesting","invincible",
 "jolly","joyous","judicious",
-"kaput","keen","kind","kindhearted","kindly","knotty","knowing","knowledgeable","known",
-"labored","lackadaisical","lacking","lame","lamentable","languid","large","last","late","laughable","lavish","lazy","lean","learned","left","legal","lethal","level","lewd","light","like","likeable","limping","literate","little","lively","lively","living","lonely","long","longing","long-term","loose","lopsided","loud","loutish","lovely","loving","low","lowly","lucky","ludicrous","lumpy","lush","luxuriant","lying","lyrical",
-"macabre","macho","maddening","madly","magenta","magical","magnificent","majestic","makeshift","male","malicious","mammoth","maniacal","many","marked","massive","married","marvelous","material","materialistic","mature","mean","measly","meaty","medical","meek","mellow","melodic","melted","merciful","mere","messy","mighty","military","milky","mindless","miniature","minor","miscreant","misty","mixed","moaning","modern","moldy","momentous","motionless","mountainous","muddled","mundane","murky","mushy","mute","mysterious",
+"keen","kind","kindhearted","kindly","knowledgeable",
+"lavish","learned","level","likeable","lively","lovely","loving","lush","luxuriant","lyrical",
+"magnificent","majestic","marvelous","mighty","momentous",
 "naive","nappy","narrow","nasty","natural","naughty","nauseating","near","neat","nebulous","necessary","needless","needy","neighborly","nervous","new","next","nice","nifty","nimble","nine","nippy","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","nosy","noxious","null","numberless","numerous","nutritious","nutty",
 "oafish","obedient","obeisant","obese","obnoxious","obscene","obsequious","observant","obsolete","obtainable","oceanic","odd","offbeat","old","old-fashioned","omniscient","one","onerous","open","opposite","optimal","orange","ordinary","organic","ossified","outgoing","outrageous","outstanding","oval","overconfident","overjoyed","overrated","overt","overwrought",
 "painful","painstaking","pale","paltry","panicky","panoramic","parallel","parched","parsimonious","past","pastoral","pathetic","peaceful","penitent","perfect","periodic","permissible","perpetual","petite","petite","phobic","physical","picayune","pink","piquant","placid","plain","plant","plastic","plausible","pleasant","plucky","pointless","poised","polite","political","poor","possessive","possible","powerful","precious","premium","present","pretty","previous","pricey","prickly","private","probable","productive","profuse","protective","proud","psychedelic","psychotic","public","puffy","pumped","puny","purple","purring","pushy","puzzled","puzzling",
@@ -110,6 +110,9 @@ let negAdjSet =
 "halting","hapless","harsh","hateful","heartbreaking","hellish", "hideous","highfalutin", "hissing","homely","horrible",
 "icky","icy","idiotic","ignorant","ill","illegal","ill-fated","ill-informed","impolite","incompetent","infamous","insidious","irate","irritating","itchy",
 "jaded","jealous","jumbled",
+"kaput",
+"labored","lackadaisical","lacking","lame","lamentable","languid","laughable","lazy","left","legal","lethal","lewd","loutish","low","lowly","ludicrous","lying",
+"macabre","maddening","malicious","maniacal","mean","measly","meek","mere","messy","mindless","miscreant","moaning","moldy","muddled","mundane","murky",
 ]
 
 // NEUTRAL ADJECTIVE SETS
@@ -125,6 +128,9 @@ let neutAdjSet =
 "habitual","half","hanging","hard","hard-to-find","heady","heavy", "helpless", "hesitant", "high", "high-pitched","historical","holistic","hollow","homeless","hospitable","hot","huge","hulking","humdrum","hungry","hurried","hurt","hushed","husky","hypnotic",
 "imaginary","immense","imminent","impartial","imperfect","important","imported","impossible","incandescent","inconclusive","inexpensive","innate","innocent","inquisitive","instinctive","internal",
 "jagged","jazzy","jittery","jobless","juicy","jumpy","juvenile",
+"knotty","knowing","known",
+"large","last","late","lean","light","like","limping","literate","little","living","lonely","long","longing","long-term","loose","lopsided","loud","lucky","lumpy",
+"macho","madly","magenta","magical","makeshift","male","mammoth","many","marked","massive","married","material","materialistic","mature","meaty","medical","mellow","melodic","melted","merciful","military","milky","miniature","minor","misty","mixed","modern","motionless","mountainous","mushy","mute","mysterious",
 ]
 
 let superAdjSet = ["best",]

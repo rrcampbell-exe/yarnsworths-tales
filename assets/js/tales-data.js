@@ -68,8 +68,8 @@ let posAdjSet =
 "keen","kind","kindhearted","kindly","knowledgeable",
 "lavish","learned","level","likeable","lively","lovely","loving","lush","luxuriant","lyrical",
 "magnificent","majestic","marvelous","mighty","momentous",
-"naive","nappy","narrow","nasty","natural","naughty","nauseating","near","neat","nebulous","necessary","needless","needy","neighborly","nervous","new","next","nice","nifty","nimble","nine","nippy","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","nosy","noxious","null","numberless","numerous","nutritious","nutty",
-"oafish","obedient","obeisant","obese","obnoxious","obscene","obsequious","observant","obsolete","obtainable","oceanic","odd","offbeat","old","old-fashioned","omniscient","one","onerous","open","opposite","optimal","orange","ordinary","organic","ossified","outgoing","outrageous","outstanding","oval","overconfident","overjoyed","overrated","overt","overwrought",
+"neat","necessary","neighborly","nice","nifty","nutritious",
+"optimal","outstanding","overjoyed",
 "painful","painstaking","pale","paltry","panicky","panoramic","parallel","parched","parsimonious","past","pastoral","pathetic","peaceful","penitent","perfect","periodic","permissible","perpetual","petite","petite","phobic","physical","picayune","pink","piquant","placid","plain","plant","plastic","plausible","pleasant","plucky","pointless","poised","polite","political","poor","possessive","possible","powerful","precious","premium","present","pretty","previous","pricey","prickly","private","probable","productive","profuse","protective","proud","psychedelic","psychotic","public","puffy","pumped","puny","purple","purring","pushy","puzzled","puzzling",
 "quack","quaint","quarrelsome","questionable","quick","quickest","quiet","quirky","quixotic","quizzical",
 "rabid","racial","ragged","rainy","rambunctious","rampant","rapid","rare","raspy","ratty","ready","real","rebel","receptive","recondite","red","redundant","reflective","regular","relieved","remarkable","reminiscent","repulsive","resolute","resonant","responsible","rhetorical","rich","right","righteous","rightful","rigid","ripe","ritzy","roasted","robust","romantic","roomy","rotten","rough","round","royal","ruddy","rude","rural","rustic","ruthless",
@@ -113,6 +113,8 @@ let negAdjSet =
 "kaput",
 "labored","lackadaisical","lacking","lame","lamentable","languid","laughable","lazy","left","legal","lethal","lewd","loutish","low","lowly","ludicrous","lying",
 "macabre","maddening","malicious","maniacal","mean","measly","meek","mere","messy","mindless","miscreant","moaning","moldy","muddled","mundane","murky",
+"nasty","naughty","nauseating","needless","needy","nippy","nosy","noxious",
+"oafish","obnoxious","obscene","obsequious","obsolete","onerous","outrageous","overconfident","overrated","overwrought",
 ]
 
 // NEUTRAL ADJECTIVE SETS
@@ -131,6 +133,8 @@ let neutAdjSet =
 "knotty","knowing","known",
 "large","last","late","lean","light","like","limping","literate","little","living","lonely","long","longing","long-term","loose","lopsided","loud","lucky","lumpy",
 "macho","madly","magenta","magical","makeshift","male","mammoth","many","marked","massive","married","material","materialistic","mature","meaty","medical","mellow","melodic","melted","merciful","military","milky","miniature","minor","misty","mixed","modern","motionless","mountainous","mushy","mute","mysterious",
+"naive","nappy","narrow","natural","near","nebulous","nervous","new","next","nimble","nine","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","null","numberless","numerous","nutty","overt",
+"obedient","obeisant","obese","observant","obtainable","oceanic","odd","offbeat","old","old-fashioned","omniscient","one","open","opposite","orange","ordinary","organic","ossified","outgoing","oval",
 ]
 
 let superAdjSet = ["best",]

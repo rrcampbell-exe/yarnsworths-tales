@@ -1,5 +1,5 @@
 // adjective sets
-let masterAdjSet = 
+const masterAdjSet = 
 ["aback","abaft","abandoned","abashed","aberrant","abhorrent","abiding","abject","ablaze","able","abnormal","aboard","aboriginal","abortive","abounding","abrasive","abrupt","absent","absorbed","absorbing","abstracted","absurd","abundant","abusive","acceptable","accessible","accidental","accurate","acid","acidic","acoustic","acrid","actually","ad","hoc","adamant","adaptable","addicted","adhesive","adjoining","adorable","adventurous","afraid","aggressive","agonizing","agreeable","ahead","ajar","alcoholic","alert","alike","alive","alleged","alluring","aloof","amazing","ambiguous","ambitious","amuck","amused","amusing","ancient","angry","animated","annoyed","annoying","anxious","apathetic","aquatic","aromatic","arrogant","ashamed","aspiring","assorted","astonishing","attractive","auspicious","automatic","available","average","awake","aware","awesome","awful","axiomatic",
 "bad","barbarous","bashful","bawdy","beautiful","befitting","belligerent","beneficial","bent","berserk","best","better","bewildered","big","billowy","bite-sized","bitter","bizarre","black","black-and-white","bloody","blue","blue-eyed","blushing","boiling","boorish","bored","boring","bouncy","boundless","brainy","brash","brave","brawny","breakable","breezy","brief","bright","bright","broad","broken","brown","bumpy","burly","bustling","busy",
 "cagey","calculating","callous","calm","capable","capricious","careful","careless","caring","cautious","ceaseless","certain","changeable","charming","cheap","cheerful","chemical","chief","childlike","chilly","chivalrous","chubby","chunky","clammy","classy","clean","clear","clever","cloistered","cloudy","closed","clumsy","cluttered","coherent","cold","colorful","colossal","combative","comfortable","common","complete","complex","concerned","condemned","confused","conscious","cooing","cool","cooperative","coordinated","courageous","cowardly","crabby","craven","crazy","creepy","crooked","crowded","cruel","cuddly","cultured","cumbersome","curious","curly","curved","curvy","cut","cute","cute","cynical",
@@ -27,7 +27,7 @@ let masterAdjSet =
 "yellow","yielding","young","youthful","yummy",
 "zany","zealous","zesty","zippy","zonked"]
 
-let masterAdjIndefSet = 
+const masterAdjIndefSet = 
 ["bad","barbarous","bashful","bawdy","beautiful","befitting","belligerent","beneficial","bent","berserk","best","better","bewildered","big","billowy","bite-sized","bitter","bizarre","black","black-and-white","bloody","blue","blue-eyed","blushing","boiling","boorish","bored","boring","bouncy","boundless","brainy","brash","brave","brawny","breakable","breezy","brief","bright","bright","broad","broken","brown","bumpy","burly","bustling","busy",
 "cagey","calculating","callous","calm","capable","capricious","careful","careless","caring","cautious","ceaseless","certain","changeable","charming","cheap","cheerful","chemical","chief","childlike","chilly","chivalrous","chubby","chunky","clammy","classy","clean","clear","clever","cloistered","cloudy","closed","clumsy","cluttered","coherent","cold","colorful","colossal","combative","comfortable","common","complete","complex","concerned","condemned","confused","conscious","cooing","cool","cooperative","coordinated","courageous","cowardly","crabby","craven","crazy","creepy","crooked","crowded","cruel","cuddly","cultured","cumbersome","curious","curly","curved","curvy","cut","cute","cute","cynical",
 "daffy","daily","damaged","damaging","damp","dangerous","dapper","dark","dashing","dazzling","dead","deadpan","deafening","dear","debonair","decisive","decorous","deep","deeply","defeated","defective","defiant","delicate","delicious","delightful","demonic","delirious","dependent","depressed","deranged","descriptive","deserted","detailed","determined","devilish","didactic","different","difficult","diligent","direful","dirty","disagreeable","disastrous","discreet","disgusted","disgusting","disillusioned","dispensable","distinct","disturbed","divergent","dizzy","domineering","doubtful","drab","draconian","dramatic","dreary","drunk","dry","dull","dusty","dynamic","dysfunctional",
@@ -54,7 +54,7 @@ let masterAdjIndefSet =
 
 // POSITIVE ADJECTIVE SETS
 
-let posAdjSet = 
+const posAdjSet = 
 ["absorbing","adorable","alluring","amazing","astonishing","attractive","auspicious","awesome",
 "beautiful","beneficial",
 "charming","cheerful","chivalrous","clever","courageous","cuddly","cultured","cute",
@@ -71,34 +71,89 @@ let posAdjSet =
 "neat","necessary","neighborly","nice","nifty","nutritious",
 "optimal","outstanding","overjoyed",
 "peaceful","perfect","piquant","pleasant","plucky","poised","polite","precious","premium","pretty",
-"remarkable","responsible","righteous","rightful","rigid","ripe",
+"remarkable","responsible","righteous","rightful",
 "safe","satisfying","savory","scintillating","seemly","silky","skillful","smart","smiling","spectacular","spiffy","splendid","spotless","steadfast","stimulating","strong","stupendous","substantial","successful","super","superb","supreme","swanky",
 "talented","tasteful","tasty","terrific","thankful","thoughtful","tidy","toothsome","tremendous","truthful",
 "unbiased","unequaled","upbeat","useful","utopian",
-"vacuous","vagabond","vague","valuable","various","vast","vengeful","venomous","verdant","versed","victorious","vigorous","violent","violet","vivacious","voiceless","volatile","voracious","vulgar",
-"wacky","waggish","waiting","wakeful","wandering","wanting","warlike","warm","wary","wasteful","watery","weak","walthy","weary","well-groomed","well-made","well-off","well-to-do","wet","whimsical","whispering","white","whole","wholesale","wicked","wide","wide-eyed","wiggly","wild","willing","windy","wiry","wise","wistful","witty","woebegone","womanly","wonderful","wooden","woozy","workable","worried","worthless","wrathful","wretched","wrong","wry",
-"xenophobic",
-"yellow","yielding","young","youthful","yummy",
-"zany","zealous","zesty","zippy","zonked"]
+"valuable","versed","victorious","vigorous","vivacious",
+"waggish","warm","well-groomed","well-made","well-off","well-to-do","wise","witty","wonderful",
+"yummy",]
 
-let posAdjSetPeople = 
-["absorbing","adorable","alluring","amazing","astonishing","attractive","auspicious","awesome",
-
+const posAdjSetPeople = 
+[
+// "absorbing","adorable","alluring","amazing","astonishing","attractive","auspicious","awesome",
+"beautiful",
+"charming","cheerful","chivalrous","clever","courageous","cuddly","cultured","cute",
+"dashing","dazzling","decorous","delightful",
+// "educated","efficient","elegant","elite","eminent","enchanting","excellent","exciting","exultant", 
+"fabulous", "fair", "faithful", "fantastic","fascinating","fearless","fine","flashy", "flawless","fortunate","friendly", 
+"gifted","glamorous","glorious","godly","good","gorgeous","graceful","grateful", "great", 
+"hallowed","handsome","handy","happy","healthy","heavenly","helpful","hilarious","honorable","humorous","hysterical",
+// "illustrious","industrious","incredible","intelligent","interesting","invincible",
+"jolly","joyous","judicious",
+"keen","kind","kindhearted","kindly","knowledgeable",
+"lavish","learned","level-headed","likeable","lively","lovely","loving","lush","luxuriant","lyrical",
+"magnificent","majestic","marvelous","mighty",
+"neat","neighborly","nice","nifty",
+// "outstanding","overjoyed",
+"peaceful","perfect","pleasant","plucky","poised","polite","precious","pretty",
+"remarkable","responsible","righteous",
+"savory","seemly","skillful","smart","smiling","spectacular","spiffy","splendid","steadfast","stimulating","strong","stupendous","successful","super","superb","swanky",
+"talented","tasteful","terrific","thankful","thoughtful","tidy","toothsome","tremendous","truthful",
+// "unbiased","unequaled","upbeat","utopian",
+"victorious","vigorous","vivacious",
+"waggish","warm","well-groomed","well-made","well-off","well-to-do","wise","witty","wonderful",
 ]
 
-let posAdjSetPlaces = 
+const posAdjSetPlaces = 
 ["alluring","amazing","astonishing","attractive","auspicious","awesome",
-
+"beautiful",
+"charming","cheerful","cute",
+"dazzling","delightful",
+"elegant","elite","enchanting","excellent","exciting","exclusive",
+"fabulous", "fair", "fantastic","fascinating","fine","flashy", "flawless",
+"glamorous","gleaming","glistening","glorious","good","gorgeous","great", 
+"hallowed","handsome","heavenly",
+"incredible","interesting",
+"lavish","lively","lovely","lush","luxuriant",
+"magnificent","majestic","marvelous","mighty",
+"neat","nice","nifty",
+"outstanding",
+"peaceful","perfect","pleasant","precious","pretty",
+"remarkable",
+"safe","satisfying","savory","scintillating","seemly","spectacular","spiffy","splendid","spotless","stimulating","stupendous","super","superb","swanky",
+"tasteful","terrific","tidy","tremendous",
+"unequaled","utopian",
+"vivacious",
+"warm","well-made","wonderful",
 ]
 
-let posAdjSetThings = 
+const posAdjSetThings = 
 ["absorbing","adorable","alluring","amazing","astonishing","attractive","auspicious","awesome",
-
+"beautiful","beneficial",
+"charming","cute",
+"delicious","delightful",
+"efficacious","efficient","elegant","elite","enchanting","excellent","exciting", 
+"fabulous", "fair", "fantastic","fascinating","fine","flashy","flawless", 
+"gainful","glamorous","gleaming","glistening","glorious","good","gorgeous","great", 
+"hallowed","handsome","handy","helpful",
+"illustrious","incredible","interesting",
+"lovely",
+"magnificent","majestic","marvelous","mighty","momentous",
+"neat","necessary","nice","nifty","nutritious",
+"optimal","outstanding",
+"perfect","piquant","pleasant","precious","premium","pretty",
+"remarkable","righteous","rightful",
+"safe","satisfying","savory","scintillating","seemly","silky","spectacular","spiffy","splendid","spotless","stimulating","strong","stupendous","substantial","super","superb","supreme",
+"unequaled","useful",
+"valuable",
+"warm","well-made","wonderful",
+"yummy",
 ]
 
 // NEGATIVE ADJECTIVE SETS
 
-let negAdjSet = 
+const negAdjSet = 
 ["abhorrent","abject","abortive","abrasive","abusive","acrid","agonizing","annoying","arrogant","awful",
 "bad","barbarous","bawdy","boorish","broken",
 "calculating","callous","chilly","cold","combative","condemned","cowardly","crabby","craven","creepy","crooked","cruel","cumbersome","cynical",
@@ -120,11 +175,13 @@ let negAdjSet =
 "scandalous","scary","screeching","selfish","shrill","sick","sloppy","smelly","snobbish","snotty","sordid","spiteful","spurious","squalid","stale","stingy","stupid","sulky","superficial",
 "taboo","tacky","tasteless","tawdry","tedious","terrible","thoughtless","threatening","tightfisted","tiresome","torpid","trashy","trite","truculent","two","typical",
 "ugly","unable","unaccountable","unadvised","unbecoming","undesirable","uneven","unhealthy","uninterested","unkempt","unruly","unsightly","unsuitable","untidy","unwieldy","uppity","upset","uptight","useless",
-]
+"vacuous","vengeful","venomous","violent","vulgar",
+"warlike","wasteful","weary","wicked","wistful","woebegone","worthless","wrathful","wretched","wrong",
+"xenophobic",]
 
 // NEUTRAL ADJECTIVE SETS
 
-let neutAdjSet = 
+const neutAdjSet = 
 ["abandoned","abashed","aberrant","abiding","ablaze","able","abnormal","aboard","aboriginal","abounding","abrupt","absent","absorbed","abstracted","absurd","abundant","acceptable","accessible","accidental","accurate","acid","acidic","acoustic","adamant","adaptable","addicted","adhesive","adjoining","adventurous","afraid","aggressive","agreeable","ahead","ajar","alcoholic","alert","alike","alive","alleged","aloof","ambiguous","ambitious","amuck","amused","amusing","ancient","angry","animated","annoyed","anxious","apathetic","aquatic","aromatic","ashamed","aspiring","assorted","automatic","available","average","awake","aware","axiomatic",
 "bashful","bent","berserk","befitting","belligerent","bewildered","big","billowy","bite-sized","bitter","bizarre","black","black-and-white","bloody","blue","blue-eyed","blushing","boiling","bored","boring","bouncy","boundless","brainy","brash","brave","brawny","breakable","breezy","brief","bright","broad","brown","bumpy","burly","bustling","busy",
 "cagey","calm","capable","capricious","careful","careless","caring","cautious","ceaseless","certain","changeable","cheap","chemical","chief","childlike","chubby","chunky","clammy","classy","clean","clear","cloistered","cloudy","closed","clumsy","cluttered","coherent","colorful","colossal","comfortable","common","complete","complex","concerned","confused","conscious","cooing","cool","cooperative","coordinated","crazy","crowded","curious","curly","curved","curvy","cut",
@@ -142,49 +199,53 @@ let neutAdjSet =
 "obedient","obeisant","obese","observant","obtainable","oceanic","odd","offbeat","old","old-fashioned","omniscient","one","open","opposite","orange","ordinary","organic","ossified","outgoing","oval",
 "painful","painstaking","pale","panicky","panoramic","parallel","parched","past","pastoral","penitent","periodic","permissible","perpetual","petite","phobic","physical","pink","placid","plain","plant","plastic","plausible","political","poor","possible","powerful","present","previous","pricey","private","probable","productive","profuse","protective","proud","psychedelic","public","puffy","pumped","puny","purple","purring","pushy","puzzled","puzzling",
 "quaint","quiet","quirky","quixotic","quizzical",
-"racial","rainy","rapid","rare","raspy","ready","real","rebel","receptive","recondite","red","redundant","reflective","regular","relieved","reminiscent","resolute","resonant","rhetorical","rich","right","ritzy","roasted","robust","romantic","roomy","rough","round","royal","rural","rustic",
+"racial","rainy","rapid","rare","raspy","ready","real","rebel","receptive","recondite","red","redundant","reflective","regular","relieved","reminiscent","resolute","resonant","rhetorical","rich","right","ritzy","roasted","robust","romantic","roomy","rough","round","royal","rural","rustic","rigid","ripe",
 "sable","sad","salty","same","sassy","scarce","scared","scattered","scientific","scrawny","second","second-hand","secret","secretive","sedate","selective","separate","serious","shaggy","shaky","shallow","sharp","shiny","shivering","shocking","short","shut","shy","silent","silly","simple","simplistic","sincere","six","skinny","sleepy","slim","slimy","slippery","slow","small","smoggy","smooth","sneaky","soft","soggy","solid","somber","sophisticated","sore","sour","sparkling","special","spicy","spiky","spiritual","spooky","spotted","spotty","square","squealing","squeamish","staking","standing","statuesque","steady","steep","stereotyped","sticky","stiff","stormy","straight","strange","striped","sturdy","subdued","subsequent","succinct","sudden","sweet","sweltering","swift","symptomatic","synonymous",
 "tacit","tall","tame","tan","tangible","tangy","tart","tearful","teeny","teeny-tiny","telling","temporary","ten","tender","tense","tenuous","tested","testy","therapeutic","thick","thin","thinkable","third","thirsty","three","thundering","tight","tiny","tired","tough","towering","tranquil","tricky","troubled","true",
 "ubiquitous","ultra","unarmed","uncovered","understood","unique","unknown","unnatural","unused","unusual","unwritten","used","utter",
-]
+"vagabond","vague","various","vast","verdant","violet","voiceless","volatile","voracious",
+"wacky","waiting","wakeful","wandering","wanting","wary","watery","weak","wealthy","wet","whimsical","whispering","white","whole","wholesale","wide","wide-eyed","wiggly","wild","willing","windy","wiry","womanly","wooden","woozy","workable","worried","wry",
+"yellow","yielding","young","youthful",
+"zany","zealous","zesty","zippy","zonked"]
 
-let superPosAdjSet = ["best","quickest","uttermost",]
-let superNegAdjSet = ["ugliest",]
-let comparPosAdjSet = ["better",]
-let comparNegAdjSet = ["worse",]
+const superPosAdjSet = ["best","quickest","uttermost",]
+const superNegAdjSet = ["ugliest",]
+const comparPosAdjSet = ["better",]
+const comparNegAdjSet = ["worse",]
 
-let heroAdjSet = ["bad", "barbarous", "bashful", "bawdy", "beautiful", "befitting", "belligerent", "beneficial", "bent", "berserk", "bewildered", "big", "billowy", "bite-sized", "bitter", "bizarre", "black", "black-and-white", "bloody", "blue", "blue-eyed", "blushing", "boiling", "boorish", "bored", "boring", "bouncy", "boundless", "brainy", "brash", "brave", "brawny", "breakable", "breezy", "brief", "bright", "bright", "broad", "broken", "brown", "bumpy", "burly", "bustling", "busy", "cagey", "calculating", "callous", "calm", "capable", "capricious", "careful", "careless", "caring", "cautious", "ceaseless", "certain", "changeable", "charming", "cheap", "cheerful", "chemical", "chief", "childlike", "chilly", "chivalrous", "chubby", "chunky", "clammy", "classy", "clean", "clear", "clever", "cloistered", "cloudy", "closed", "clumsy", "cluttered", "coherent", "cold", "colorful", "colossal", "combative", "comfortable", "common", "complete", "complex", "concerned", "condemned", "confused", "conscious", "cooing", "cool", "cooperative", "coordinated", "courageous", "cowardly", "crabby", "craven", "crazy", "creepy", "crooked", "crowded", "cruel", "cuddly", "cultured", "cumbersome", "curious", "curly", "curved", "curvy", "cut", "cute", "cute", "cynical", "daffy", "daily", "damaged", "damaging", "damp", "dangerous", "dapper", "dark", "dashing", "dazzling", "dead", "deadpan", "deafening", "dear", "debonair", "decisive", "decorous", "deep", "deeply", "defeated", "defective", "defiant", "delicate", "delicious", "delightful", "demonic", "delirious", "dependent", "depressed", "deranged", "descriptive", "deserted", "detailed", "determined", "devilish", "didactic", "different", "difficult", "diligent", "direful", "dirty", "disagreeable", "disastrous", "discreet", "disgusted", "disgusting", "disillusioned", "dispensable", "distinct", "disturbed", "divergent", "dizzy", "domineering", "doubtful", "drab", "draconian", "dramatic", "dreary", "drunk", "dry", "dull", "dusty", "dynamic", "dysfunctional", "fabulous", "faded", "faint fair", "faithful", "fallacious", "false", "familiar", "famous", "fanatical", "fancy", "fantastic", "far", "far-flung", " fascinated", "fast", "fat", "faulty", "fearful", "fearless", "feeble", "feigned", "female", "fertile", "festive", "fierce", "filthy", "fine", "finicky", "fixed", "flagrant", "flaky", "flashy", "flat", "flawless", "flimsy", " flippant", "flowery", "fluffy", "fluttering", " foamy", "foolish", "foregoing", "forgetful", "fortunate", "frail", "fragile", "frantic", "free", " freezing", " frequent", " fresh", " fretful", "friendly", "frightened", "frightening", "full", "fumbling", "functional", "funny", "furry", "furtive", "future futuristic", "fuzzy ", "gabby", "gainful", "gamy", "gaping", "garrulous", "gaudy", "general gentle", "giant", "giddy", "gifted", "gigantic", "glamorous", "gleaming", "glib", "glistening glorious", "glossy", "godly", "good", "goofy", "gorgeous", "graceful", "grandiose", "grateful", "gray", "greasy", "great", "greedy", "green", "grey", "grieving", "groovy", "grotesque", "grouchy", "grubby", "gruesome", "grumpy", "guarded", "guiltless", "gullible", "gusty", "guttural", "jaded", "jagged", "jazzy", "jealous", "jittery", "jobless", "jolly", "joyous", "judicious", "juicy", "jumbled", "jumpy", "juvenile", "kaput", "keen", "kind", "kindhearted", "kindly", "knotty", "knowing", "knowledgeable", "known", "labored", "lackadaisical", "lacking", "lame", "lamentable", "languid", "large", "last", "late", "laughable", "lavish", "lazy", "lean", "learned", "left", "legal", "lethal", "level", "lewd", "light", "like", "likeable", "limping", "literate", "little", "lively", "lively", "living", "lonely", "long", "longing", "long-term", "loose", "lopsided", "loud", "loutish", "lovely", "loving", "low", "lowly", "lucky", "ludicrous", "lumpy", "lush", "luxuriant", "lying", "lyrical", "macabre", "macho", "maddening", "madly", "magenta", "magical", "magnificent", "majestic", "makeshift", "male", "malicious", "mammoth", "maniacal", "many", "marked", "massive", "married", "marvelous", "material", "materialistic", "mature", "mean", "measly", "meaty", "medical", "meek", "mellow", "melodic", "melted", "merciful", "mere", "messy", "mighty", "military", "milky", "mindless", "miniature", "minor", "miscreant", "misty", "mixed", "moaning", "modern", "moldy", "momentous", "motionless", "mountainous", "muddled", "mundane", "murky", "mushy", "mute", "mysterious", "naive", "nappy", "narrow", "nasty", "natural", "naughty", "nauseating", "near", "neat", "nebulous", "necessary", "needless", "needy", "neighborly", "nervous", "new", "next", "nice", "nifty", "nimble", "nippy", "noiseless", "noisy", "nonchalant", "nondescript", "nonstop", "normal", "nostalgic", "nosy", "noxious", "nutritious", "nutty", "painful", "painstaking", "pale", "paltry", "panicky", "panoramic", "parallel", "parched", "parsimonious", "past", "pastoral", "pathetic", "peaceful", "penitent", "perfect", "periodic", "permissible", "perpetual", "petite", "petite", "phobic", "physical", "picayune", "pink", "piquant", "placid", "plain", "plant", "plastic", "plausible", "pleasant", "plucky", "pointless", "poised", "polite", "political", "poor", "possessive", "possible", "powerful", "precious", "premium", "present", "pretty", "previous", "pricey", "prickly", "private", "probable", "productive", "profuse", "protective", "proud", "psychedelic", "psychotic", "public", "puffy", "pumped", "puny", "purple", "purring", "pushy", "puzzled", "puzzling", "quack", "quaint", "quarrelsome", "questionable", "quick", "quickest", "quiet", "quirky", "quixotic", "quizzical", "rabid", "racial", "ragged", "rainy", "rambunctious", "rampant", "rapid", "rare", "raspy", "ratty", "ready", "real", "rebel", "receptive", "recondite", "red", "redundant", "reflective", "regular", "relieved", "remarkable", "reminiscent", "repulsive", "resolute", "resonant", "responsible", "rhetorical", "rich", "right", "righteous", "rightful", "rigid", "ripe", "ritzy", "roasted", "robust", "romantic", "roomy", "rotten", "rough", "round", "royal", "ruddy", "rude", "rural", "rustic", "ruthless", "sable", "sad", "safe", "salty", "same", "sassy", "satisfying", "savory", "scandalous", "scarce", "scared", "scary", "scattered", "scientific", "scintillating", "scrawny", "screeching", "second-hand", "secret", "secretive", "sedate", "seemly", "selective", "selfish", "separate", "serious", "shaggy", "shaky", "shallow", "sharp", "shiny", "shivering", "shocking", "short", "shrill", "shut", "shy", "sick", "silent", "silent", "silky", "silly", "simple", "simplistic", "sincere", "skillful", "skinny", "sleepy", "slim", "slimy", "slippery", "sloppy", "slow", "small", "smart", "smelly", "smiling", "smoggy", "smooth", "sneaky", "snobbish", "snotty", "soft", "soggy", "solid", "somber", "sophisticated", "sordid", "sore", "sore", "sour", "sparkling", "special", "spectacular", "spicy", "spiffy", "spiky", "spiritual", "spiteful", "splendid", "spooky", "spotless", "spotted", "spotty", "spurious", "squalid", "square", "squealing", "squeamish", "staking", "stale", "standing", "statuesque", "steadfast", "steady", "steep", "stereotyped", "sticky", "stiff", "stimulating", "stingy", "stormy", "straight", "strange", "striped", "strong", "stupendous", "stupid", "sturdy", "subdued", "subsequent", "substantial", "successful", "succinct", "sudden", "sulky", "super", "superb", "superficial", "supreme", "swanky", "sweet", "sweltering", "swift", "symptomatic", "synonymous", "taboo", "tacit", "tacky", "talented", "tall", "tame", "tan", "tangible", "tangy", "tart", "tasteful", "tasteless", "tasty", "tawdry", "tearful", "tedious", "teeny", "teeny-tiny", "telling", "temporary", "tender", "tense", "tenuous", "terrible", "terrific", "tested", "testy", "thankful", "therapeutic", "thick", "thin", "thinkable", "thirsty", "thoughtful", "thoughtless", "threatening", "thundering", "tidy", "tight", "tightfisted", "tiny", "tired", "tiresome", "toothsome", "torpid", "tough", "towering", "tranquil", "trashy", "tremendous", "tricky", "trite", "troubled", "truculent", "true", "truthful", "typical", "vacuous", "vagabond", "vague", "valuable", "various", "vast", "vengeful", "venomous", "verdant", "versed", "victorious", "vigorous", "violent", "violet", "vivacious", "voiceless", "volatile", "voracious", "vulgar", "wacky", "waggish", "waiting", "wakeful", "wandering", "wanting", "warlike", "warm", "wary", "wasteful", "watery", "weak", "wealthy", "weary", "well-groomed", "well-made", "well-off", "well-to-do", "wet", "whimsical", "whispering", "white", "whole", "wholesale", "wicked", "wide", "wide-eyed", "wiggly", "wild", "willing", "windy", "wiry", "wise", "wistful", "witty", "woebegone", "womanly", "wonderful", "wooden", "woozy", "worried", "worthless", "wrathful", "wretched", "wrong", "wry", "xenophobic", "yellow", "yielding", "young", "youthful", "yummy", "zany", "zealous", "zesty", "zippy", "zonked"];
-let monsterAdjSet = ["bad", "barbarous", "bashful", "bawdy", "beautiful", "befitting", "belligerent", "beneficial", "bent", "berserk", "bewildered", "big", "billowy", "bite-sized", "bitter", "bizarre", "black", "black-and-white", "bloody", "blue", "blue-eyed", "blushing", "boiling", "boorish", "bored", "boring", "bouncy", "boundless", "brainy", "brash", "brave", "brawny", "breakable", "breezy", "brief", "bright", "bright", "broad", "broken", "brown", "bumpy", "burly", "bustling", "busy", "cagey", "calculating", "callous", "calm", "capable", "capricious", "careful", "careless", "caring", "cautious", "ceaseless", "certain", "changeable", "charming", "cheap", "cheerful", "chemical", "chief", "childlike", "chilly", "chivalrous", "chubby", "chunky", "clammy", "classy", "clean", "clear", "clever", "cloistered", "cloudy", "closed", "clumsy", "cluttered", "coherent", "cold", "colorful", "colossal", "combative", "comfortable", "common", "complete", "complex", "concerned", "condemned", "confused", "conscious", "cooing", "cool", "cooperative", "coordinated", "courageous", "cowardly", "crabby", "craven", "crazy", "creepy", "crooked", "crowded", "cruel", "cuddly", "cultured", "cumbersome", "curious", "curly", "curved", "curvy", "cut", "cute", "cute", "cynical", "daffy", "daily", "damaged", "damaging", "damp", "dangerous", "dapper", "dark", "dashing", "dazzling", "dead", "deadpan", "deafening", "dear", "debonair", "decisive", "decorous", "deep", "deeply", "defeated", "defective", "defiant", "delicate", "delicious", "delightful", "demonic", "delirious", "dependent", "depressed", "deranged", "descriptive", "deserted", "detailed", "determined", "devilish", "didactic", "different", "difficult", "diligent", "direful", "dirty", "disagreeable", "disastrous", "discreet", "disgusted", "disgusting", "disillusioned", "dispensable", "distinct", "disturbed", "divergent", "dizzy", "domineering", "doubtful", "drab", "draconian", "dramatic", "dreary", "drunk", "dry", "dull", "dusty", "dynamic", "dysfunctional", "fabulous", "faded", "faint fair", "faithful", "fallacious", "false", "familiar", "famous", "fanatical", "fancy", "fantastic", "far", " far-flung", " fascinated", "fast", "fat", "faulty", "fearful", "fearless", "feeble", "feigned", "female", "fertile", "festive", "fierce", "filthy", "fine", "finicky", "fixed", " flagrant", "flaky", "flashy", "flat", "flawless", "flimsy", " flippant", "flowery", "fluffy", "fluttering", " foamy", "foolish", "foregoing", "forgetful", "fortunate", "frail", "fragile", "frantic", "free", " freezing", " frequent", " fresh", " fretful", "friendly", "frightened", "frightening", "full", "fumbling", "functional", "funny", "furry", "furtive", "future futuristic", "fuzzy ", "gabby", "gainful", "gamy", "gaping", "garrulous", "gaudy", "general gentle", "giant", "giddy", "gifted", "gigantic", "glamorous", "gleaming", "glib", "glistening glorious", "glossy", "godly", "good", "goofy", "gorgeous", "graceful", "grandiose", "grateful", "gray", "greasy", "great", "greedy", "green", "grey", "grieving", "groovy", "grotesque", "grouchy", "grubby", "gruesome", "grumpy", "guarded", "guiltless", "gullible", "gusty", "guttural", "jaded", "jagged", "jazzy", "jealous", "jittery", "jobless", "jolly", "joyous", "judicious", "juicy", "jumbled", "jumpy", "juvenile", "kaput", "keen", "kind", "kindhearted", "kindly", "knotty", "knowing", "knowledgeable", "known", "labored", "lackadaisical", "lacking", "lame", "lamentable", "languid", "large", "last", "late", "laughable", "lavish", "lazy", "lean", "learned", "left", "legal", "lethal", "level", "lewd", "light", "like", "likeable", "limping", "literate", "little", "lively", "lively", "living", "lonely", "long", "longing", "long-term", "loose", "lopsided", "loud", "loutish", "lovely", "loving", "low", "lowly", "lucky", "ludicrous", "lumpy", "lush", "luxuriant", "lying", "lyrical", "macabre", "macho", "maddening", "madly", "magenta", "magical", "magnificent", "majestic", "makeshift", "male", "malicious", "mammoth", "maniacal", "many", "marked", "massive", "married", "marvelous", "material", "materialistic", "mature", "mean", "measly", "meaty", "medical", "meek", "mellow", "melodic", "melted", "merciful", "mere", "messy", "mighty", "military", "milky", "mindless", "miniature", "minor", "miscreant", "misty", "mixed", "moaning", "modern", "moldy", "momentous", "motionless", "mountainous", "muddled", "mundane", "murky", "mushy", "mute", "mysterious", "naive", "nappy", "narrow", "nasty", "natural", "naughty", "nauseating", "near", "neat", "nebulous", "necessary", "needless", "needy", "neighborly", "nervous", "new", "next", "nice", "nifty", "nimble", "nippy", "noiseless", "noisy", "nonchalant", "nondescript", "nonstop", "normal", "nostalgic", "nosy", "noxious", "nutritious", "nutty", "painful", "painstaking", "pale", "paltry", "panicky", "panoramic", "parallel", "parched", "parsimonious", "past", "pastoral", "pathetic", "peaceful", "penitent", "perfect", "periodic", "permissible", "perpetual", "petite", "petite", "phobic", "physical", "picayune", "pink", "piquant", "placid", "plain", "plant", "plastic", "plausible", "pleasant", "plucky", "pointless", "poised", "polite", "political", "poor", "possessive", "possible", "powerful", "precious", "premium", "present", "pretty", "previous", "pricey", "prickly", "private", "probable", "productive", "profuse", "protective", "proud", "psychedelic", "psychotic", "public", "puffy", "pumped", "puny", "purple", "purring", "pushy", "puzzled", "puzzling", "quack", "quaint", "quarrelsome", "questionable", "quick", "quickest", "quiet", "quirky", "quixotic", "quizzical", "rabid", "racial", "ragged", "rainy", "rambunctious", "rampant", "rapid", "rare", "raspy", "ratty", "ready", "real", "rebel", "receptive", "recondite", "red", "redundant", "reflective", "regular", "relieved", "remarkable", "reminiscent", "repulsive", "resolute", "resonant", "responsible", "rhetorical", "rich", "right", "righteous", "rightful", "rigid", "ripe", "ritzy", "roasted", "robust", "romantic", "roomy", "rotten", "rough", "round", "royal", "ruddy", "rude", "rural", "rustic", "ruthless", "sable", "sad", "safe", "salty", "same", "sassy", "satisfying", "savory", "scandalous", "scarce", "scared", "scary", "scattered", "scientific", "scintillating", "scrawny", "screeching", "second-hand", "secret", "secretive", "sedate", "seemly", "selective", "selfish", "separate", "serious", "shaggy", "shaky", "shallow", "sharp", "shiny", "shivering", "shocking", "short", "shrill", "shut", "shy", "sick", "silent", "silent", "silky", "silly", "simple", "simplistic", "sincere", "skillful", "skinny", "sleepy", "slim", "slimy", "slippery", "sloppy", "slow", "small", "smart", "smelly", "smiling", "smoggy", "smooth", "sneaky", "snobbish", "snotty", "soft", "soggy", "solid", "somber", "sophisticated", "sordid", "sore", "sore", "sour", "sparkling", "special", "spectacular", "spicy", "spiffy", "spiky", "spiritual", "spiteful", "splendid", "spooky", "spotless", "spotted", "spotty", "spurious", "squalid", "square", "squealing", "squeamish", "staking", "stale", "standing", "statuesque", "steadfast", "steady", "steep", "stereotyped", "sticky", "stiff", "stimulating", "stingy", "stormy", "straight", "strange", "striped", "strong", "stupendous", "stupid", "sturdy", "subdued", "subsequent", "substantial", "successful", "succinct", "sudden", "sulky", "super", "superb", "superficial", "supreme", "swanky", "sweet", "sweltering", "swift", "symptomatic", "synonymous", "taboo", "tacit", "tacky", "talented", "tall", "tame", "tan", "tangible", "tangy", "tart", "tasteful", "tasteless", "tasty", "tawdry", "tearful", "tedious", "teeny", "teeny-tiny", "telling", "temporary", "tender", "tense", "tenuous", "terrible", "terrific", "tested", "testy", "thankful", "therapeutic", "thick", "thin", "thinkable", "thirsty", "thoughtful", "thoughtless", "threatening", "thundering", "tidy", "tight", "tightfisted", "tiny", "tired", "tiresome", "toothsome", "torpid", "tough", "towering", "tranquil", "trashy", "tremendous", "tricky", "trite", "troubled", "truculent", "true", "truthful", "typical", "vacuous", "vagabond", "vague", "valuable", "various", "vast", "vengeful", "venomous", "verdant", "versed", "victorious", "vigorous", "violent", "violet", "vivacious", "voiceless", "volatile", "voracious", "vulgar", "wacky", "waggish", "waiting", "wakeful", "wandering", "wanting", "warlike", "warm", "wary", "wasteful", "watery", "weak", "wealthy", "weary", "well-groomed", "well-made", "well-off", "well-to-do", "wet", "whimsical", "whispering", "white", "whole", "wholesale", "wicked", "wide", "wide-eyed", "wiggly", "wild", "willing", "windy", "wiry", "wise", "wistful", "witty", "woebegone", "womanly", "wonderful", "wooden", "woozy", "worried", "worthless", "wrathful", "wretched", "wrong", "wry", "xenophobic", "yellow", "yielding", "young", "youthful", "yummy", "zany", "zealous", "zesty", "zippy", "zonked"];
+const heroAdjSet = [...posAdjSetPeople, ...neutAdjSet]
+
+const monsterAdjSet = [...negAdjSet, ...neutAdjSet]
 
 // verb set
-let verbSet = ["slay", "treat with", "investigate the murder of", "investigate the disappearance of", "investigate the kidnapping of", "interrogate", "parley with", "study", "forge an alliance with", "reach an understanding with", "destroy", "banish", "ruin the life of", "loot the den of", "domesticate", "bring to heel", "lay low", "chronicle the conquests of", "vanquish"];
+const verbSet = ["slay", "treat with", "investigate the murder of", "investigate the disappearance of", "investigate the kidnapping of", "interrogate", "parley with", "study", "forge an alliance with", "reach an understanding with", "destroy", "banish", "ruin the life of", "loot the den of", "domesticate", "bring to heel", "lay low", "chronicle the conquests of", "vanquish"];
 
 
 // value set
-let valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance", "prophecy", "wish fulfillment"]
+const valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance", "prophecy", "wish fulfillment"]
 
 // CASCADING LOGIC
 
     // uncommon races logic    
-    let uncommonRaces = ["leonin", "satyr", "aarakocra", "genasi", "goliath", "aasimar", "bugbear", "firbolg", "goblin", "hobgoblin", "kenku", "kobold", "lizardfolk", "orc", "tabaxi", "triton", "yuan-ti", "tortle"]
+    const uncommonRaces = ["leonin", "satyr", "aarakocra", "genasi", "goliath", "aasimar", "bugbear", "firbolg", "goblin", "hobgoblin", "kenku", "kobold", "lizardfolk", "orc", "tabaxi", "triton", "yuan-ti", "tortle"]
 
     // subraces logic
-    let elfSubrace = ["high", "wood", "dark", ""]
+    const elfSubrace = ["high", "wood", "dark", ""]
 
-    let dwarfSubrace = ["hill", "mountain", ""]
+    const dwarfSubrace = ["hill", "mountain", ""]
 
-    let gnomeSubrace = ["deep", "forest", "rock", ""]
+    const gnomeSubrace = ["deep", "forest", "rock", ""]
 
-    let halflingSubrace = ["lightfoot", "stout"]
+    const halflingSubrace = ["lightfoot", "stout"]
     
     // uncommon classes logic
-    let uncommonClasses = ["artificer"]
+    const uncommonClasses = ["artificer"]
     
     // vengeance cascading logic
-    let venge = [" for their lover's death", " for their brother's murder", " for the disappearance of their beloved pet", " for a most grotesque public embarassment", " for the most salacious of gossipmongering", " for a betrayal of unspeakable devilry", " for an incurable curse bestowed upon their family", " for a most foul disrespect cast upon their liege lord", " for having sullied the virtue of their betrothed", " for a most disgusting act", " for a deceit of unfathomable consequence", " for an act of guile ill-conceived", ""]
+    const venge = [" for their lover's death", " for their brother's murder", " for the disappearance of their beloved pet", " for a most grotesque public embarassment", " for the most salacious of gossipmongering", " for a betrayal of unspeakable devilry", " for an incurable curse bestowed upon their family", " for a most foul disrespect cast upon their liege lord", " for having sullied the virtue of their betrothed", " for a most disgusting act", " for a deceit of unfathomable consequence", " for an act of guile ill-conceived", ""]
 
     // gods cascading logic
-    let gods = [" Auril, goddess of winter", "Azuth, god of wizards", "Bane, god of tyranny", "Beshaba, goddess of misfortune", "Bhaal, god of murder", "Chauntea, goddess of agriculture", "Cyric, god of lies", "Deneir, god of writing", "Eldath, goddess of peace", "Gond, god of craft", "Helm, god of protection", "Ilmater, god of endurance", "Kelemvor, god of the dead", "Lathander, god of birth and renewal", "Leira, goddess of illusion", "Lliira, goddess of joy", "Loviatar, goddess of pain", "Malar, god of the hunt", "Mask, god of thieves", "Mielikki, goddess of forests", "Milil, god of poetry and song", "Myrkul, god of death", "Mystra, goddess of magic", "Oghma, god of knowledge", "Savras, god of divination and fate", "Selûne, goddess of the moon", "Shar, goddess of darkness and loss", "Silvanus, god of wild nature", "Sune, goddess of love and beauty", "Talona, goddess of disease and poison", "Talos, god of storms", "Tempus, god of war", "Torm, god of courage and self-sacrifice", "Tymora, god of justice", "Umberlee, goddess of the sea", "Waukeen, goddess of trade"]
+    const gods = [" Auril, goddess of winter", "Azuth, god of wizards", "Bane, god of tyranny", "Beshaba, goddess of misfortune", "Bhaal, god of murder", "Chauntea, goddess of agriculture", "Cyric, god of lies", "Deneir, god of writing", "Eldath, goddess of peace", "Gond, god of craft", "Helm, god of protection", "Ilmater, god of endurance", "Kelemvor, god of the dead", "Lathander, god of birth and renewal", "Leira, goddess of illusion", "Lliira, goddess of joy", "Loviatar, goddess of pain", "Malar, god of the hunt", "Mask, god of thieves", "Mielikki, goddess of forests", "Milil, god of poetry and song", "Myrkul, god of death", "Mystra, goddess of magic", "Oghma, god of knowledge", "Savras, god of divination and fate", "Selûne, goddess of the moon", "Shar, goddess of darkness and loss", "Silvanus, god of wild nature", "Sune, goddess of love and beauty", "Talona, goddess of disease and poison", "Talos, god of storms", "Tempus, god of war", "Torm, god of courage and self-sacrifice", "Tymora, god of justice", "Umberlee, goddess of the sea", "Waukeen, goddess of trade"]
 
     // loyalties cascading logic
-    let loyalties = [" to their father", " to their mother", " to their king", " to their queen", " to an archmage of dubious repute", " to a childhood friend", " to the custodian of the orphanage who raised them", " to an admiral of questionable integrity", " to the local constabulary", " to the order of the Emerald Enclave", " to their patron"]
+    const loyalties = [" to their father", " to their mother", " to their king", " to their queen", " to an archmage of dubious repute", " to a childhood friend", " to the custodian of the orphanage who raised them", " to an admiral of questionable integrity", " to the local constabulary", " to the order of the Emerald Enclave", " to their patron"]

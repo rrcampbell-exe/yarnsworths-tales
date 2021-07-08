@@ -73,7 +73,7 @@ let posAdjSet =
 "peaceful","perfect","piquant","pleasant","plucky","poised","polite","precious","premium","pretty",
 "remarkable","responsible","righteous","rightful","rigid","ripe",
 "safe","satisfying","savory","scintillating","seemly","silky","skillful","smart","smiling","spectacular","spiffy","splendid","spotless","steadfast","stimulating","strong","stupendous","substantial","successful","super","superb","supreme","swanky",
-"taboo","tacit","tacky","talented","tall","tame","tan","tangible","tangy","tart","tasteful","tasteless","tasty","tawdry","tearful","tedious","teeny","teeny-tiny","telling","temporary","ten","tender","tense","tenuous","terrible","terrific","tested","testy","thankful","therapeutic","thick","thin","thinkable","third","thirsty","thoughtful","thoughtless","threatening","three","thundering","tidy","tight","tightfisted","tiny","tired","tiresome","toothsome","torpid","tough","towering","tranquil","trashy","tremendous","tricky","trite","troubled","truculent","true","truthful","two","typical",
+"talented","tasteful","tasty","terrific","thankful","thoughtful","tidy","toothsome","tremendous","truthful",
 "ubiquitous","ugliest","ugly","ultra","unable","unaccountable","unadvised","unarmed","unbecoming","unbiased","uncovered","understood","undesirable","unequal","unequaled","uneven","unhealthy","uninterested","unique","unkempt","unknown","unnatural","unruly","unsightly","unsuitable","untidy","unused","unusual","unwieldy","unwritten","upbeat","uppity","upset","uptight","used","useful","useless","utopian","utter","uttermost",
 "vacuous","vagabond","vague","valuable","various","vast","vengeful","venomous","verdant","versed","victorious","vigorous","violent","violet","vivacious","voiceless","volatile","voracious","vulgar",
 "wacky","waggish","waiting","wakeful","wandering","wanting","warlike","warm","wary","wasteful","watery","weak","walthy","weary","well-groomed","well-made","well-off","well-to-do","wet","whimsical","whispering","white","whole","wholesale","wicked","wide","wide-eyed","wiggly","wild","willing","windy","wiry","wise","wistful","witty","woebegone","womanly","wonderful","wooden","woozy","workable","worried","worthless","wrathful","wretched","wrong","wry",
@@ -118,6 +118,7 @@ let negAdjSet =
 "quack","quarrelsome","questionable","quick",
 "rabid","ragged","rambunctious","rampant","ratty","repulsive","rotten","ruddy","rude","ruthless",
 "scandalous","scary","screeching","selfish","shrill","sick","sloppy","smelly","snobbish","snotty","sordid","spiteful","spurious","squalid","stale","stingy","stupid","sulky","superficial",
+"taboo","tacky","tasteless","tawdry","tedious","terrible","thoughtless","threatening","tightfisted","tiresome","torpid","trashy","trite","truculent","two","typical",
 ]
 
 // NEUTRAL ADJECTIVE SETS
@@ -142,6 +143,7 @@ let neutAdjSet =
 "quaint","quiet","quirky","quixotic","quizzical",
 "racial","rainy","rapid","rare","raspy","ready","real","rebel","receptive","recondite","red","redundant","reflective","regular","relieved","reminiscent","resolute","resonant","rhetorical","rich","right","ritzy","roasted","robust","romantic","roomy","rough","round","royal","rural","rustic",
 "sable","sad","salty","same","sassy","scarce","scared","scattered","scientific","scrawny","second","second-hand","secret","secretive","sedate","selective","separate","serious","shaggy","shaky","shallow","sharp","shiny","shivering","shocking","short","shut","shy","silent","silly","simple","simplistic","sincere","six","skinny","sleepy","slim","slimy","slippery","slow","small","smoggy","smooth","sneaky","soft","soggy","solid","somber","sophisticated","sore","sour","sparkling","special","spicy","spiky","spiritual","spooky","spotted","spotty","square","squealing","squeamish","staking","standing","statuesque","steady","steep","stereotyped","sticky","stiff","stormy","straight","strange","striped","sturdy","subdued","subsequent","succinct","sudden","sweet","sweltering","swift","symptomatic","synonymous",
+"tacit","tall","tame","tan","tangible","tangy","tart","tearful","teeny","teeny-tiny","telling","temporary","ten","tender","tense","tenuous","tested","testy","therapeutic","thick","thin","thinkable","third","thirsty","three","thundering","tight","tiny","tired","tough","towering","tranquil","tricky","troubled","true",
 ]
 
 let superAdjSet = ["best","quickest",]

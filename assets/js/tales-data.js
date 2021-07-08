@@ -72,7 +72,7 @@ let posAdjSet =
 "optimal","outstanding","overjoyed",
 "peaceful","perfect","piquant","pleasant","plucky","poised","polite","precious","premium","pretty",
 "remarkable","responsible","righteous","rightful","rigid","ripe",
-"sable","sad","safe","salty","same","sassy","satisfying","savory","scandalous","scarce","scared","scary","scattered","scientific","scintillating","scrawny","screeching","second","second-hand","secret","secretive","sedate","seemly","selective","selfish","separate","serious","shaggy","shaky","shallow","sharp","shiny","shivering","shocking","short","shrill","shut","shy","sick","silent","silent","silky","silly","simple","simplistic","sincere","six","skillful","skinny","sleepy","slim","slimy","slippery","sloppy","slow","small","smart","smelly","smiling","smoggy","smooth","sneaky","snobbish","snotty","soft","soggy","solid","somber","sophisticated","sordid","sore","sore","sour","sparkling","special","spectacular","spicy","spiffy","spiky","spiritual","spiteful","splendid","spooky","spotless","spotted","spotty","spurious","squalid","square","squealing","squeamish","staking","stale","standing","statuesque","steadfast","steady","steep","stereotyped","sticky","stiff","stimulating","stingy","stormy","straight","strange","striped","strong","stupendous","stupid","sturdy","subdued","subsequent","substantial","successful","succinct","sudden","sulky","super","superb","superficial","supreme","swanky","sweet","sweltering","swift","symptomatic","synonymous",
+"safe","satisfying","savory","scintillating","seemly","silky","skillful","smart","smiling","spectacular","spiffy","splendid","spotless","steadfast","stimulating","strong","stupendous","substantial","successful","super","superb","supreme","swanky",
 "taboo","tacit","tacky","talented","tall","tame","tan","tangible","tangy","tart","tasteful","tasteless","tasty","tawdry","tearful","tedious","teeny","teeny-tiny","telling","temporary","ten","tender","tense","tenuous","terrible","terrific","tested","testy","thankful","therapeutic","thick","thin","thinkable","third","thirsty","thoughtful","thoughtless","threatening","three","thundering","tidy","tight","tightfisted","tiny","tired","tiresome","toothsome","torpid","tough","towering","tranquil","trashy","tremendous","tricky","trite","troubled","truculent","true","truthful","two","typical",
 "ubiquitous","ugliest","ugly","ultra","unable","unaccountable","unadvised","unarmed","unbecoming","unbiased","uncovered","understood","undesirable","unequal","unequaled","uneven","unhealthy","uninterested","unique","unkempt","unknown","unnatural","unruly","unsightly","unsuitable","untidy","unused","unusual","unwieldy","unwritten","upbeat","uppity","upset","uptight","used","useful","useless","utopian","utter","uttermost",
 "vacuous","vagabond","vague","valuable","various","vast","vengeful","venomous","verdant","versed","victorious","vigorous","violent","violet","vivacious","voiceless","volatile","voracious","vulgar",
@@ -105,7 +105,7 @@ let negAdjSet =
 "deranged","devilish","direful","dirty","disagreeable","disastrous","disgusting","draconian","dreary",
 "envious",
 "fallacious", "false","faulty","fearful","feeble", "feigned","filthy", "flagrant","flimsy", "flippant", "foolish", "frail","fretful","frightening","fumbling",  
-"garrulous", "gaudy", "general", "gentle","giant","giddy","glossy","grandiose","greedy", "grotesque", "grouchy", "grubby", "gruesome", "grumpy", "guttural", 
+"garrulous", "gaudy", "grandiose","greedy", "grotesque", "grouchy", "grubby", "gruesome", "grumpy", "guttural", 
 "halting","hapless","harsh","hateful","heartbreaking","hellish", "hideous","highfalutin", "hissing","homely","horrible",
 "icky","icy","idiotic","ignorant","ill","illegal","ill-fated","ill-informed","impolite","incompetent","infamous","insidious","irate","irritating","itchy",
 "jaded","jealous","jumbled",
@@ -117,6 +117,7 @@ let negAdjSet =
 "paltry","parsimonious","pathetic","picayune","pointless","possessive","prickly","psychotic",
 "quack","quarrelsome","questionable","quick",
 "rabid","ragged","rambunctious","rampant","ratty","repulsive","rotten","ruddy","rude","ruthless",
+"scandalous","scary","screeching","selfish","shrill","sick","sloppy","smelly","snobbish","snotty","sordid","spiteful","spurious","squalid","stale","stingy","stupid","sulky","superficial",
 ]
 
 // NEUTRAL ADJECTIVE SETS
@@ -128,7 +129,7 @@ let neutAdjSet =
 "daffy","damaged","damaging","damp","dangerous","dapper","dark","dead","deadpan","deafening","dear","debonair","decisive","deep","defeated","defective","defiant","delicate","demonic","delirious","dependent","depressed","descriptive","deserted","detailed","determined","didactic","different","difficult","diligent","discreet","disgusted","disillusioned","dispensable","distinct","disturbed","divergent","dizzy","domineering","doubtful","drab","dramatic","drunk","dry","dull","dusty","dynamic","dysfunctional",
 "eager","early","earsplitting","earthy","easy","eatable","economic","elastic","elated","elderly","electric","elfin","embarrassed","empty","enchanted","encouraging","endurable","energetic","enormous","entertaining","enthusiastic","equable","equal","erect","erratic","ethereal","evanescent","evasive","even","excited", "exotic", "expensive", "extra-large", "extra-small", "exuberant",  
 "faded", "faint", "familiar", "famous", "fanatical", "fancy", "far"," far-flung","fascinated", "fast", "fat", "female", "fertile", "festive", "few", "fierce", "finicky", "first", "five", "fixed","flaky","flat", "flowery", "fluffy", "fluttering", "foamy", "foregoing", "forgetful", "four", "fragile", "frantic", "free", "freezing", "frequent","frightened","full","functional", "funny", "furry", "furtive", "future", "futuristic", "fuzzy",     
-"gabby", "gamy", "gaping", "gigantic","glib","goofy","gratis", "gray", "greasy", "green", "grey", "grieving", "groovy", "guarded", "guiltless", "gullible", "gusty", 
+"gabby", "gamy", "gaping", "general", "gentle","giant","giddy","glossy","gigantic","glib","goofy","gratis", "gray", "greasy", "green", "grey", "grieving", "groovy", "guarded", "guiltless", "gullible", "gusty", 
 "habitual","half","hanging","hard","hard-to-find","heady","heavy", "helpless", "hesitant", "high", "high-pitched","historical","holistic","hollow","homeless","hospitable","hot","huge","hulking","humdrum","hungry","hurried","hurt","hushed","husky","hypnotic",
 "imaginary","immense","imminent","impartial","imperfect","important","imported","impossible","incandescent","inconclusive","inexpensive","innate","innocent","inquisitive","instinctive","internal",
 "jagged","jazzy","jittery","jobless","juicy","jumpy","juvenile",
@@ -140,6 +141,7 @@ let neutAdjSet =
 "painful","painstaking","pale","panicky","panoramic","parallel","parched","past","pastoral","penitent","periodic","permissible","perpetual","petite","phobic","physical","pink","placid","plain","plant","plastic","plausible","political","poor","possible","powerful","present","previous","pricey","private","probable","productive","profuse","protective","proud","psychedelic","public","puffy","pumped","puny","purple","purring","pushy","puzzled","puzzling",
 "quaint","quiet","quirky","quixotic","quizzical",
 "racial","rainy","rapid","rare","raspy","ready","real","rebel","receptive","recondite","red","redundant","reflective","regular","relieved","reminiscent","resolute","resonant","rhetorical","rich","right","ritzy","roasted","robust","romantic","roomy","rough","round","royal","rural","rustic",
+"sable","sad","salty","same","sassy","scarce","scared","scattered","scientific","scrawny","second","second-hand","secret","secretive","sedate","selective","separate","serious","shaggy","shaky","shallow","sharp","shiny","shivering","shocking","short","shut","shy","silent","silly","simple","simplistic","sincere","six","skinny","sleepy","slim","slimy","slippery","slow","small","smoggy","smooth","sneaky","soft","soggy","solid","somber","sophisticated","sore","sour","sparkling","special","spicy","spiky","spiritual","spooky","spotted","spotty","square","squealing","squeamish","staking","standing","statuesque","steady","steep","stereotyped","sticky","stiff","stormy","straight","strange","striped","sturdy","subdued","subsequent","succinct","sudden","sweet","sweltering","swift","symptomatic","synonymous",
 ]
 
 let superAdjSet = ["best","quickest",]

@@ -25,7 +25,8 @@ const masterAdjSet =
 "wacky","waggish","waiting","wakeful","wandering","wanting","warlike","warm","wary","wasteful","watery","weak","walthy","weary","well-groomed","well-made","well-off","well-to-do","wet","whimsical","whispering","white","whole","wholesale","wicked","wide","wide-eyed","wiggly","wild","willing","windy","wiry","wise","wistful","witty","woebegone","womanly","wonderful","wooden","woozy","workable","worried","worthless","wrathful","wretched","wrong","wry",
 "xenophobic",
 "yellow","yielding","young","youthful","yummy",
-"zany","zealous","zesty","zippy","zonked"]
+"zany","zealous","zesty","zippy","zonked"
+]
 
 const masterAdjIndefSet = 
 ["bad","barbarous","bashful","bawdy","beautiful","befitting","belligerent","beneficial","bent","berserk","best","better","bewildered","big","billowy","bite-sized","bitter","bizarre","black","black-and-white","bloody","blue","blue-eyed","blushing","boiling","boorish","bored","boring","bouncy","boundless","brainy","brash","brave","brawny","breakable","breezy","brief","bright","bright","broad","broken","brown","bumpy","burly","bustling","busy",
@@ -77,7 +78,8 @@ const posAdjSet =
 "unbiased","unequaled","upbeat","useful","utopian",
 "valuable","versed","victorious","vigorous","vivacious",
 "waggish","warm","well-groomed","well-made","well-off","well-to-do","wise","witty","wonderful",
-"yummy",]
+"yummy",
+]
 
 const posAdjSetPeople = 
 [
@@ -177,7 +179,85 @@ const negAdjSet =
 "ugly","unable","unaccountable","unadvised","unbecoming","undesirable","uneven","unhealthy","uninterested","unkempt","unruly","unsightly","unsuitable","untidy","unwieldy","uppity","upset","uptight","useless",
 "vacuous","vengeful","venomous","violent","vulgar",
 "warlike","wasteful","weary","wicked","wistful","woebegone","worthless","wrathful","wretched","wrong",
-"xenophobic",]
+"xenophobic",
+]
+
+const negAdjSetPeople = 
+[
+// "abhorrent","abject","abrasive","abusive","acrid","agonizing","annoying","arrogant","awful",
+"bad","barbarous","bawdy","boorish","broken",
+"calculating","callous","chilly","cold","combative","condemned","cowardly","crabby","craven","creepy","crooked","cruel","cumbersome","cynical",
+"deranged","devilish","direful","dirty","disagreeable","disastrous","disgusting","draconian","dreary",
+// "envious",
+"faulty","fearful","feeble","filthy","flippant","foolish","frail","fretful","frightening","fumbling",  
+"garrulous","gaudy","grandiose","greedy","grotesque","grouchy","grubby","gruesome","grumpy",
+"halting","hapless","harsh","hateful","heartbreaking","hellish","hideous","highfalutin","hissing","homely","horrible",
+// "icky","icy","idiotic","ignorant","ill","illegal","ill-fated","ill-informed","impolite","incompetent","infamous","insidious","irate","irritating",
+"jaded","jealous","jumbled",
+"lackadaisical","lacking","lame","lamentable","languid","laughable","lazy","lethal","lewd","loutish","low","lowly","ludicrous","lying",
+"macabre","maddening","malicious","maniacal","mean","meek","messy","mindless","miscreant","muddled","mundane",
+"nasty","naughty","nauseating","needless","needy","nosy","noxious",
+// "oafish","obnoxious","obscene","obsequious","onerous","outrageous","overconfident","overrated",
+"parsimonious","pathetic","picayune","pointless","possessive","prickly","psychotic",
+"quack","quarrelsome","questionable","quick",
+"rabid","ragged","rambunctious","ratty","repulsive","rotten","ruddy","rude","ruthless",
+"scandalous","scary","screeching","selfish","shrill","sick","sloppy","smelly","snobbish","snotty","sordid","spiteful","spurious","stingy","stupid","sulky","superficial",
+"tacky","tasteless","tawdry","tedious","terrible","thoughtless","threatening","tightfisted","tiresome","torpid","trashy","truculent",
+// "ugly","unable","unaccountable","unadvised","unbecoming","undesirable","uneven","unhealthy","uninterested","unkempt","unruly","unsightly","untidy","unwieldy","uppity","upset","uptight","useless",
+"vacuous","vengeful","venomous","violent","vulgar",
+"warlike","wasteful","weary","wicked","wistful","woebegone","worthless","wrathful","wretched",
+]
+
+const negAdjSetPlaces = 
+[
+"awful",
+"bad","barbarous","bawdy",
+"chilly","cold","condemned","creepy","crooked",
+"direful","dirty","disgusting","dreary",
+"faulty","filthy","flimsy","frail","frightening", 
+"gaudy","grandiose","grotesque","grubby","gruesome", 
+"hellish","hideous","homely","horrible",
+"icky","icy","ill-fated","infamous",
+"kaput",
+"lacking","lame","lamentable","languid","laughable","lowly","ludicrous",
+"macabre","maddening","meek","messy","moldy","mundane",
+"nasty","nauseating","needless","noxious",
+"obscene","outrageous","overrated","overwrought",
+"pathetic",
+"questionable",
+"ragged","ratty","repulsive","rotten","ruddy",
+"scary","sloppy","smelly","sordid","spurious","squalid",
+"taboo","tacky","tasteless","tawdry","terrible","trashy",
+"ugly","undesirable","unkempt","unsightly","untidy",
+"vacuous","vulgar",
+"wicked","wistful","woebegone","worthless","wretched",
+]
+
+const negAdjSetThings =
+[
+"abhorrent","abject","abortive","abrasive","acrid","agonizing","annoying","awful",
+"bad","barbarous","bawdy","broken",
+"chilly","cold","cumbersome",
+"devilish","direful","dirty","disgusting",
+"fallacious","faulty","feeble","feigned","filthy","flagrant","flimsy","frail","frightening",
+"gaudy","grandiose","grotesque","grubby","gruesome","guttural", 
+"hapless","harsh","heartbreaking","hellish","hideous","highfalutin","hissing","homely","horrible",
+"icky","icy","illegal","ill-fated","infamous","insidious","itchy",
+"jumbled",
+"kaput",
+"labored","lacking","lame","lamentable","laughable","lethal","lewd","loutish","lowly","ludicrous",
+"macabre","maddening","malicious","measly","mere","messy","moldy","muddled","mundane","murky",
+"nasty","nauseating","needless","nippy","noxious",
+"obscene","obsolete","onerous","outrageous","overrated","overwrought",
+"paltry","pathetic","picayune","pointless",
+"questionable","quick",
+"ragged","rampant","ratty","repulsive","rotten","ruddy",
+"scandalous","scary","screeching","sick","sloppy","smelly","sordid","spurious","stale",
+"taboo","tacky","tasteless","tawdry","tedious","terrible","threatening","tiresome","trashy","trite",
+"ugly","undesirable","uneven","unhealthy","unkempt","unruly","unsightly","unsuitable","untidy","unwieldy","useless",
+"venomous","violent","vulgar",
+"wasteful","wicked","worthless","wretched","wrong",
+]
 
 // NEUTRAL ADJECTIVE SETS
 
@@ -193,7 +273,7 @@ const neutAdjSet =
 "imaginary","immense","imminent","impartial","imperfect","important","imported","impossible","incandescent","inconclusive","inexpensive","innate","innocent","inquisitive","instinctive","internal",
 "jagged","jazzy","jittery","jobless","juicy","jumpy","juvenile",
 "knotty","knowing","known",
-"large","last","late","lean","light","like","limping","literate","little","living","lonely","long","longing","long-term","loose","lopsided","loud","lucky","lumpy",
+"large","last","late","lean","legal","light","like","limping","literate","little","living","lonely","long","longing","long-term","loose","lopsided","loud","lucky","lumpy",
 "macho","madly","magenta","magical","makeshift","male","mammoth","many","marked","massive","married","material","materialistic","mature","meaty","medical","mellow","melodic","melted","merciful","military","milky","miniature","minor","misty","mixed","modern","motionless","mountainous","mushy","mute","mysterious",
 "naive","nappy","narrow","natural","near","nebulous","nervous","new","next","nimble","nine","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","null","numberless","numerous","nutty","overt",
 "obedient","obeisant","obese","observant","obtainable","oceanic","odd","offbeat","old","old-fashioned","omniscient","one","open","opposite","orange","ordinary","organic","ossified","outgoing","oval",
@@ -201,7 +281,7 @@ const neutAdjSet =
 "quaint","quiet","quirky","quixotic","quizzical",
 "racial","rainy","rapid","rare","raspy","ready","real","rebel","receptive","recondite","red","redundant","reflective","regular","relieved","reminiscent","resolute","resonant","rhetorical","rich","right","ritzy","roasted","robust","romantic","roomy","rough","round","royal","rural","rustic","rigid","ripe",
 "sable","sad","salty","same","sassy","scarce","scared","scattered","scientific","scrawny","second","second-hand","secret","secretive","sedate","selective","separate","serious","shaggy","shaky","shallow","sharp","shiny","shivering","shocking","short","shut","shy","silent","silly","simple","simplistic","sincere","six","skinny","sleepy","slim","slimy","slippery","slow","small","smoggy","smooth","sneaky","soft","soggy","solid","somber","sophisticated","sore","sour","sparkling","special","spicy","spiky","spiritual","spooky","spotted","spotty","square","squealing","squeamish","staking","standing","statuesque","steady","steep","stereotyped","sticky","stiff","stormy","straight","strange","striped","sturdy","subdued","subsequent","succinct","sudden","sweet","sweltering","swift","symptomatic","synonymous",
-"tacit","tall","tame","tan","tangible","tangy","tart","tearful","teeny","teeny-tiny","telling","temporary","ten","tender","tense","tenuous","tested","testy","therapeutic","thick","thin","thinkable","third","thirsty","three","thundering","tight","tiny","tired","tough","towering","tranquil","tricky","troubled","true",
+"tacit","tall","tame","tan","tangible","tangy","tart","tearful","teeny","teeny-tiny","telling","temporary","ten","tender","tense","tenuous","tested","testy","therapeutic","thick","thin","thinkable","third","thirsty","three","thundering","tight","tiny","tired","tough","towering","tranquil","tricky","troubled","true","typical",
 "ubiquitous","ultra","unarmed","uncovered","understood","unique","unknown","unnatural","unused","unusual","unwritten","used","utter",
 "vagabond","vague","various","vast","verdant","violet","voiceless","volatile","voracious",
 "wacky","waiting","wakeful","wandering","wanting","wary","watery","weak","wealthy","wet","whimsical","whispering","white","whole","wholesale","wide","wide-eyed","wiggly","wild","willing","windy","wiry","womanly","wooden","woozy","workable","worried","wry",

@@ -1,3 +1,12 @@
+var countObj = {
+    raceCount: "",
+    classCount: "",
+    verbCount: "",
+    monsterCount: "",
+    valueCount: "",
+    talesTotal: "",
+}
+
 // FUNCTION TO GENERATE HERO DATA
 
 let heroData = function () {
@@ -17,6 +26,8 @@ let heroData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
+            countObj.raceCount = (data.results.length + uncommonRaces.length)
+            talesCount(countObj.raceCount)
             race.forEach(node => {
                 if (randomIndex < data.results.length) {
                     node.textContent = data.results[randomIndex].index;
@@ -37,6 +48,8 @@ let heroData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * (data.results.length +1))
+            countObj.classCount = (data.results.length + uncommonClasses.length)
+            talesCount(countObj.classCount)
             heroClass.forEach(node => {
                 if (randomIndex < data.results.length) {
                     node.textContent = data.results[randomIndex].index;
@@ -69,6 +82,8 @@ let heroData = function () {
         let randomIndex = Math.floor(Math.random() * loyalties.length)
         value.textContent += loyalties[randomIndex];
     };
+    countObj.valueCount = (valueSet.length + venge.length + gods.length + loyalties.length)
+    talesCount(countObj.valueCount)
 };
 
 // FUNCTION TO SELECT VERB
@@ -76,7 +91,9 @@ let heroData = function () {
 let verbChoice = function () {
     let verb = document.querySelector("#verb")
     let randomIndex = Math.floor(Math.random() * verbSet.length)
-    verb.textContent = verbSet[randomIndex];
+    verb.textContent = verbSet[randomIndex]
+    countObj.verbCount = verbSet.length
+    talesCount(countObj.verbCount)
 };
 
 // FUNCTION TO GENERATE MONSTER DATA
@@ -87,7 +104,7 @@ let monsterData = function () {
         // let monsterAdjSelect = Match.ceil(Math.random() * monsterAdjSet.length)
         let monsterAdj = document.querySelector("#monster-adj")
         let randomIndex = Math.floor(Math.random() * monsterAdjSet.length)
-        monsterAdj.textContent = monsterAdjSet[randomIndex];
+        monsterAdj.textContent = monsterAdjSet[randomIndex]
     };
     // function to establish monster
     let apiMonster = "https://www.dnd5eapi.co/api/monsters/"
@@ -97,6 +114,8 @@ let monsterData = function () {
         .then(res => res.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.results.length)
+            countObj.monsterCount = data.results.length
+            talesCount(countObj.monsterCount)
             let monsterText = data.results[randomIndex].name.toLowerCase() 
             if (monsterText.includes(",")) {
                 monster.textContent = monsterText.split(',')[0]
@@ -138,6 +157,14 @@ let talesShake = function () {
     $ ( "#tale-intro" ).show( "fast" );
 }
 
+// FUNCTION TO GET COUNT OF UNIQUE TALE COMBINATIONS
+
+function talesCount() {
+    var talesTotal = (posAdjSetPeople.length + neutAdjSetPeople.length) * countObj.raceCount * countObj.classCount * countObj.verbCount * (neutAdjSetPeople.length + negAdjSetPeople.length) * countObj.monsterCount * countObj.valueCount
+    countObj.talesTotal = talesTotal.toLocaleString()
+    console.log(countObj.talesTotal)
+}
+
 // function to generate new tale on button click
 var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
 tellMeAnotherYarnsyEl.addEventListener("click", () => {
@@ -156,4 +183,5 @@ taleInvisibility();
 heroData();
 verbChoice();
 monsterData();
+setTimeout(talesCount, 1000)
 delayFunction();

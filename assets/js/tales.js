@@ -163,6 +163,12 @@ function talesCount() {
     var talesTotal = (posAdjSetPeople.length + neutAdjSetPeople.length) * countObj.raceCount * countObj.classCount * countObj.verbCount * (neutAdjSetPeople.length + negAdjSetPeople.length) * countObj.monsterCount * countObj.valueCount
     countObj.talesTotal = talesTotal.toLocaleString()
     console.log(countObj.talesTotal)
+    displayCount(countObj.talesTotal)
+}
+
+function displayCount() {
+    let countDisplay = document.querySelector("#tale-count")
+    countDisplay.textContent = countObj.talesTotal
 }
 
 // function to generate new tale on button click
@@ -183,5 +189,5 @@ taleInvisibility();
 heroData();
 verbChoice();
 monsterData();
-setTimeout(talesCount, 1000)
+displayCount();
 delayFunction();

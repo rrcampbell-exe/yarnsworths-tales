@@ -162,7 +162,6 @@ let talesShake = function () {
 function talesCount() {
     var talesTotal = (posAdjSetPeople.length + neutAdjSetPeople.length) * countObj.raceCount * countObj.classCount * countObj.verbCount * (neutAdjSetPeople.length + negAdjSetPeople.length) * countObj.monsterCount * countObj.valueCount
     countObj.talesTotal = talesTotal.toLocaleString()
-    console.log(countObj.talesTotal)
     displayCount(countObj.talesTotal)
 }
 

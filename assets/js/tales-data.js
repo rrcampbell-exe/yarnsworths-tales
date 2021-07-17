@@ -276,8 +276,8 @@ const neutAdjSet =
 "knotty","knowing","known",
 "large","last","late","lean","legal","light","like","limping","literate","little","living","lonely","long","longing","long-term","loose","lopsided","loud","lucky","lumpy",
 "macho","madly","magenta","magical","makeshift","male","mammoth","many","marked","massive","married","material","materialistic","mature","meaty","medical","mellow","melodic","melted","merciful","military","milky","miniature","minor","misty","mixed","modern","motionless","mountainous","mushy","mute","mysterious",
-"naive","nappy","narrow","natural","near","nebulous","nervous","new","next","nimble","nine","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","null","numberless","numerous","nutty","overt",
-"obedient","obeisant","obese","observant","obtainable","oceanic","odd","offbeat","old","old-fashioned","omniscient","one","open","opposite","orange","ordinary","organic","ossified","outgoing","oval",
+"naive","nappy","narrow","natural","near","nebulous","nervous","new","next","nimble","nine","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","null","numberless","numerous","nutty",
+"obedient","obeisant","obese","observant","obtainable","oceanic","odd","offbeat","old","old-fashioned","omniscient","one","open","opposite","orange","ordinary","organic","ossified","outgoing","oval","overt",
 "painful","painstaking","pale","panicky","panoramic","parallel","parched","past","pastoral","penitent","periodic","permissible","perpetual","petite","phobic","physical","pink","placid","plain","plant","plastic","plausible","political","poor","possible","powerful","present","previous","pricey","private","probable","productive","profuse","protective","proud","psychedelic","public","puffy","pumped","puny","purple","purring","pushy","puzzled","puzzling",
 "quaint","quiet","quirky","quixotic","quizzical",
 "racial","rainy","rapid","rare","raspy","ready","real","rebel","receptive","recondite","red","redundant","reflective","regular","relieved","reminiscent","resolute","resonant","rhetorical","rich","right","ritzy","roasted","robust","romantic","roomy","rough","round","royal","rural","rustic","rigid","ripe",
@@ -304,6 +304,11 @@ const neutAdjSetPeople =
 "knowing","known",
 "large","late","lean","legal","light","limping","literate","little","living","lonely","longing","long-term","loose","lopsided","loud","lucky","lumpy",
 "macho","magenta","magical","male","mammoth","marked","massive","married","materialistic","mature","meaty","mellow","melodic","merciful","miniature","minor","mixed","modern","mountainous","mute","mysterious",
+"naive","nebulous","nervous","nimble","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","nutty",
+"obedient","obeisant","obese","observant","odd","offbeat","old","old-fashioned","omniscient","open","orange","ordinary","organic","outgoing",
+"painful","painstaking","pale","panicky","parched","pastoral","penitent","petite","phobic","physical","pink","placid","plain","plastic","political","poor","powerful","present","pricey","private","productive","protective","proud","psychedelic","puffy","pumped","puny","purple","purring","pushy","puzzled","puzzling",
+"quaint","quiet","quirky","quixotic","quizzical",
+"rare","raspy","ready","real","rebel","receptive","recondite","red","reflective","regular","relieved","resolute","rich","ritzy","robust","romantic","rough","round","royal","rural","rustic","rigid","ripe",
 ]
 
 const neutAdjSetPlaces =
@@ -320,6 +325,11 @@ const neutAdjSetPlaces =
 "jagged","jazzy","juvenile",
 "large","lean","little","long","lopsided","loud",
 "magical","makeshift","mammoth","massive","miniature","minor","modern","mountainous","mysterious",
+"narrow","natural","near","nebulous","new","noisy","nondescript","normal",
+"odd","offbeat","old","old-fashioned","open","orange","ordinary","ossified","oval",
+"pale","panoramic","pastoral","petite","pink","placid","plain","plastic","private","psychedelic","public","puny","purple","puzzling",
+"quaint","quiet","quirky",
+"rainy","rare","real","red","reflective","regular","ritzy","robust","romantic","roomy","rough","royal","rural","rustic","rigid",
 ]
 
 const neutAdjSetThings = 
@@ -337,6 +347,11 @@ const neutAdjSetThings =
 "knotty",
 "large","lean","legal","light","little","living","long","loose","lopsided","loud","lucky","lumpy",
 "magenta","magical","makeshift","mammoth","marked","massive","material","medical","melodic","melted","milky","miniature","minor","misty","mixed","modern","motionless","mountainous","mushy","mysterious",
+"natural","near","nebulous","new","noiseless","noisy","nondescript","normal",
+"obtainable","oceanic","odd","offbeat","old","old-fashioned","orange","ordinary","organic","ossified","oval",
+"painful","pale","permissible","perpetual","petite","physical","pink","plain","plastic","plausible","poor","powerful","present","pricey","psychedelic","puffy","puny","purple","puzzling",
+"quaint","quirky",
+"rainy","rapid","rare","real","red","redundant","reflective","regular","resonant","rhetorical","rich","ritzy","roasted","robust","romantic","rough","round","royal","rustic","rigid","ripe",
 ]
 
 const superPosAdjSet = ["best","quickest","uttermost",]

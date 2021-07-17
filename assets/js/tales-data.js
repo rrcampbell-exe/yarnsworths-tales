@@ -302,6 +302,8 @@ const neutAdjSetPeople =
 "imaginary","immense","impartial","imperfect","important","impossible","innocent","inquisitive","instinctive",
 "jazzy","jittery","jobless","juicy","jumpy","juvenile",
 "knowing","known",
+"large","late","lean","legal","light","limping","literate","little","living","lonely","longing","long-term","loose","lopsided","loud","lucky","lumpy",
+"macho","magenta","magical","male","mammoth","marked","massive","married","materialistic","mature","meaty","mellow","melodic","merciful","miniature","minor","mixed","modern","mountainous","mute","mysterious",
 ]
 
 const neutAdjSetPlaces =
@@ -316,6 +318,8 @@ const neutAdjSetPlaces =
 "hard-to-find","historic","hollow","hospitable","hot","huge","hulking","humdrum",
 "imaginary","immense","imperfect","important","incandescent","inexpensive",
 "jagged","jazzy","juvenile",
+"large","lean","little","long","lopsided","loud",
+"magical","makeshift","mammoth","massive","miniature","minor","modern","mountainous","mysterious",
 ]
 
 const neutAdjSetThings = 
@@ -331,6 +335,8 @@ const neutAdjSetThings =
 "imaginary","immense","imminent","imperfect","important","imported","impossible","incandescent","inconclusive","inexpensive","internal",
 "jagged","jazzy","jittery","juicy",
 "knotty",
+"large","lean","legal","light","little","living","long","loose","lopsided","loud","lucky","lumpy",
+"magenta","magical","makeshift","mammoth","marked","massive","material","medical","melodic","melted","milky","miniature","minor","misty","mixed","modern","motionless","mountainous","mushy","mysterious",
 ]
 
 const superPosAdjSet = ["best","quickest","uttermost",]

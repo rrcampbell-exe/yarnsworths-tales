@@ -296,6 +296,12 @@ const neutAdjSetPeople =
 "cagey","calm","capable","capricious","careful","careless","caring","cautious","ceaseless","certain","cheap","chief","childlike","chubby","chunky","clammy","classy","clean","cloistered","clumsy","cluttered","coherent","colorful","colossal","comfortable","common","complex","concerned","confused","conscious","cooing","cool","cooperative","coordinated","crazy","curious","curly","curved","curvy","cut",
 "daffy","damaged","damaging","damp","dangerous","dapper","dark","dead","deadpan","deafening","dear","debonair","decisive","deep","defeated","defective","defiant","delicate","demonic","delirious","dependent","depressed","descriptive","deserted","detailed","determined","didactic","different","difficult","diligent","discreet","disgusted","disillusioned","dispensable","distinct","disturbed","divergent","dizzy","domineering","doubtful","drab","dramatic","drunk","dry","dull","dusty","dynamic","dysfunctional",
 "eager","earthy","easy-going","elated","elderly","electric","elfin","embarrassed","enchanted","encouraging","endurable","energetic","enormous","entertaining","enthusiastic","equable","erratic","ethereal","evanescent","evasive","excited","exotic","extra-large","extra-small","exuberant",  
+"familiar", "famous", "fanatical", "fancy", "far-flung","fascinated", "fast", "fat", "female", "fertile", "festive", "fierce", "finicky", "flaky","flat", "flowery", "fluffy", "fluttering", "forgetful", "fragile", "frantic", "free", "freezing", "frightened","full","functional", "funny", "furry", "furtive", "futuristic", "fuzzy",     
+"gabby", "gentle","giant","giddy","gigantic","glib","goofy","gray", "greasy", "green", "grey", "grieving", "groovy", "guarded", "guiltless", "gullible", "gusty", 
+"hard-to-find","heady","heavy", "helpless", "hesitant", "high", "high-pitched","historic","holistic","hollow","homeless","hospitable","hot","huge","hulking","humdrum","hungry","hurried","hurt","hushed","husky","hypnotic",
+"imaginary","immense","impartial","imperfect","important","impossible","innocent","inquisitive","instinctive",
+"jazzy","jittery","jobless","juicy","jumpy","juvenile",
+"knowing","known",
 ]
 
 const neutAdjSetPlaces =
@@ -305,6 +311,11 @@ const neutAdjSetPlaces =
 "certain","cheap","childlike","clean","closed","cluttered","colorful","colossal","comfortable","common","complete","complex","cool","crowded","curious",
 "damaged","damp","dangerous","dark","defective","delicate","demonic","deserted","detailed","different","discreet","dispensable","distinct","disturbed","divergent","drab","dry","dull","dusty",
 "earsplitting","earthy","elastic","electric","elfin","empty","enchanted","enormous","ethereal","evanescent","exotic","expensive","extra-large","extra-small",
+"faded", "familiar", "famous", "fancy", "far-flung","festive","fixed","flat", "flowery", "fragile", "frantic", "freezing", "full","functional", "futuristic",    
+"gaping", "general", "giant","glossy","gigantic","goofy","gray", "greasy", "green", "grey", "groovy", "guarded", "gusty", 
+"hard-to-find","historic","hollow","hospitable","hot","huge","hulking","humdrum",
+"imaginary","immense","imperfect","important","incandescent","inexpensive",
+"jagged","jazzy","juvenile",
 ]
 
 const neutAdjSetThings = 
@@ -314,6 +325,12 @@ const neutAdjSetThings =
 "capable","certain","changeable","cheap","chemical","chunky","classy","clean","clear","cloudy","closed","colorful","colossal","comfortable","common","complete","complex","conscious","cool","curious","curly","curved","curvy","cut",
 "damaged","damaging","damp","dangerous","dark","deafening","defective","delicate","demonic","detailed","didactic","different","difficult","discreet","dispensable","distinct","drab","dry","dull","dusty","dynamic","dysfunctional",
 "earthy","easy","edible","elastic","electric","elfin","empty","enchanted","energetic","enormous","equable","equal","erect","erratic","ethereal","evanescent","even","exotic","expensive","extra-large","extra-small",
+"faded", "faint", "familiar", "famous", "fancy", "fixed","flat", "flowery", "fluffy", "fluttering", "foamy", "fragile", "free", "freezing", "full","functional", "funny", "furry", "futuristic", "fuzzy",     
+"gamy", "gaping", "general", "giant","glossy","gigantic","goofy","gratis", "gray", "greasy", "green", "grey", "groovy", "guarded",  
+"habitual","hanging","hard","hard-to-find","heavy","high-pitched","historic","hollow","hot","huge","hulking","humdrum","husky","hypnotic",
+"imaginary","immense","imminent","imperfect","important","imported","impossible","incandescent","inconclusive","inexpensive","internal",
+"jagged","jazzy","jittery","juicy",
+"knotty",
 ]
 
 const superPosAdjSet = ["best","quickest","uttermost",]

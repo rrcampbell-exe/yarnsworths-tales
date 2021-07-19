@@ -291,24 +291,31 @@ const neutAdjSet =
 
 const neutAdjSetPeople = 
 [
-"abandoned","abashed","aberrant","abiding","able","abnormal","aboriginal","absurd","adamant","adaptable","addicted","adventurous","afraid","aggressive","agreeable","alcoholic","alert","alive","alleged","aloof","ambitious","amused","amusing","ancient","angry","animated","annoyed","anxious","apathetic","aquatic","aromatic","ashamed","aspiring","average","awake","aware",
+// "abandoned","abashed","aberrant","abiding","able","abnormal","aboriginal","absurd","adamant","adaptable","addicted","adventurous","afraid","aggressive","agreeable","alcoholic","alert","alive","alleged","aloof","ambitious","amused","amusing","ancient","angry","animated","annoyed","anxious","apathetic","aquatic","aromatic","ashamed","aspiring","average","awake","aware",
 "bashful","bent","berserk","belligerent","bewildered","big","billowy","bite-sized","bitter","bizarre","black","black-and-white","bloody","blue","blue-eyed","blushing","bored","boring","bouncy","brainy","brash","brave","brawny","bright","brown","bumpy","burly","bustling","busy",
 "cagey","calm","capable","capricious","careful","careless","caring","cautious","ceaseless","certain","cheap","chief","childlike","chubby","chunky","clammy","classy","clean","cloistered","clumsy","cluttered","coherent","colorful","colossal","comfortable","common","complex","concerned","confused","conscious","cooing","cool","cooperative","coordinated","crazy","curious","curly","curved","curvy","cut",
 "daffy","damaged","damaging","damp","dangerous","dapper","dark","dead","deadpan","deafening","dear","debonair","decisive","deep","defeated","defective","defiant","delicate","demonic","delirious","dependent","depressed","descriptive","deserted","detailed","determined","didactic","different","difficult","diligent","discreet","disgusted","disillusioned","dispensable","distinct","disturbed","divergent","dizzy","domineering","doubtful","drab","dramatic","drunk","dry","dull","dusty","dynamic","dysfunctional",
-"eager","earthy","easy-going","elated","elderly","electric","elfin","embarrassed","enchanted","encouraging","endurable","energetic","enormous","entertaining","enthusiastic","equable","erratic","ethereal","evanescent","evasive","excited","exotic","extra-large","extra-small","exuberant",  
+// "eager","earthy","easy-going","elated","elderly","electric","elfin","embarrassed","enchanted","encouraging","endurable","energetic","enormous","entertaining","enthusiastic","equable","erratic","ethereal","evanescent","evasive","excited","exotic","extra-large","extra-small","exuberant",  
 "familiar", "famous", "fanatical", "fancy", "far-flung","fascinated", "fast", "fat", "female", "fertile", "festive", "fierce", "finicky", "flaky","flat", "flowery", "fluffy", "fluttering", "forgetful", "fragile", "frantic", "free", "freezing", "frightened","full","functional", "funny", "furry", "furtive", "futuristic", "fuzzy",     
 "gabby", "gentle","giant","giddy","gigantic","glib","goofy","gray", "greasy", "green", "grey", "grieving", "groovy", "guarded", "guiltless", "gullible", "gusty", 
 "hard-to-find","heady","heavy", "helpless", "hesitant", "high", "high-pitched","historic","holistic","hollow","homeless","hospitable","hot","huge","hulking","humdrum","hungry","hurried","hurt","hushed","husky","hypnotic",
-"imaginary","immense","impartial","imperfect","important","impossible","innocent","inquisitive","instinctive",
+// "imaginary","immense","impartial","imperfect","important","impossible","innocent","inquisitive","instinctive",
 "jazzy","jittery","jobless","juicy","jumpy","juvenile",
 "knowing","known",
 "large","late","lean","legal","light","limping","literate","little","living","lonely","longing","long-term","loose","lopsided","loud","lucky","lumpy",
 "macho","magenta","magical","male","mammoth","marked","massive","married","materialistic","mature","meaty","mellow","melodic","merciful","miniature","minor","mixed","modern","mountainous","mute","mysterious",
 "naive","nebulous","nervous","nimble","noiseless","noisy","nonchalant","nondescript","nonstop","normal","nostalgic","nutty",
-"obedient","obeisant","obese","observant","odd","offbeat","old","old-fashioned","omniscient","open","orange","ordinary","organic","outgoing",
+// "obedient","obeisant","obese","observant","odd","offbeat","old","old-fashioned","omniscient","open","orange","ordinary","organic","outgoing",
 "painful","painstaking","pale","panicky","parched","pastoral","penitent","petite","phobic","physical","pink","placid","plain","plastic","political","poor","powerful","present","pricey","private","productive","protective","proud","psychedelic","puffy","pumped","puny","purple","purring","pushy","puzzled","puzzling",
 "quaint","quiet","quirky","quixotic","quizzical",
 "rare","raspy","ready","real","rebel","receptive","recondite","red","reflective","regular","relieved","resolute","rich","ritzy","robust","romantic","rough","round","royal","rural","rustic","rigid","ripe",
+"sable","sad","salty","sassy","scared","scattered","scientific","scrawny","secretive","sedate","selective","serious","shaggy","shaky","shallow","sharp","shiny","shivering","shocking","short","shy","silent","silly","simple","sincere","skinny","sleepy","slim","slimy","slippery","slow","small","smooth","sneaky","soft","soggy","solid","somber","sophisticated","sore","sour","sparkling","special","spicy","spiky","spiritual","spooky","spotted","spotty","square","squealing","squeamish","statuesque","steady","steep","stereotyped","sticky","stiff","stormy","straight","strange","striped","sturdy","subdued","succinct","sweet","swift","symptomatic",
+"tall","tame","tan","tangible","tearful","teeny","teeny-tiny","tender","tense","tested","testy","thick","thin","thirsty","thundering","tiny","tired","tough","towering","tranquil","tricky","troubled","typical",
+// "ubiquitous","unarmed","uncovered","understood","unique","unknown","unnatural","unusual","used",
+"vagabond","vague","vast","violet","voiceless","volatile","voracious",
+"wacky","wakeful","wandering","wanting","wary","weak","wealthy","wet","whimsical","whispering","white","whole","wide","wide-eyed","wiggly","wild","willing","wiry","womanly","wooden","woozy","workable","worried","wry",
+"yellow","yielding","young","youthful",
+"zany","zealous","zesty","zippy","zonked"
 ]
 
 const neutAdjSetPlaces =
@@ -330,6 +337,12 @@ const neutAdjSetPlaces =
 "pale","panoramic","pastoral","petite","pink","placid","plain","plastic","private","psychedelic","public","puny","purple","puzzling",
 "quaint","quiet","quirky",
 "rainy","rare","real","red","reflective","regular","ritzy","robust","romantic","roomy","rough","royal","rural","rustic","rigid",
+"second-hand","secret","separate","shaky","shiny","shocking","short","shut","silly","simple","simplistic","slim","slimy","small","smoggy","smooth","soft","soggy","solid","somber","sophisticated","sparkling","special","spiky","spiritual","spooky","spotted","square","standing","sticky","stiff","strange","sturdy","subdued","sweltering",
+"tan","tangible","teeny","teeny-tiny","temporary","tested","therapeutic","thick","thin","tight","tiny","tough","towering","typical",
+"ubiquitous","uncovered","unique","unnatural","unused","unusual","used",
+"vast","verdant","violet",
+"wacky","weak","wet","whimsical","white","whole","wide","wooden","workable",
+"yellow","zany"
 ]
 
 const neutAdjSetThings = 
@@ -352,16 +365,23 @@ const neutAdjSetThings =
 "painful","pale","permissible","perpetual","petite","physical","pink","plain","plastic","plausible","poor","powerful","present","pricey","psychedelic","puffy","puny","purple","puzzling",
 "quaint","quirky",
 "rainy","rapid","rare","real","red","redundant","reflective","regular","resonant","rhetorical","rich","ritzy","roasted","robust","romantic","rough","round","royal","rustic","rigid","ripe",
+"sable","sad","salty","scarce","scientific","second-hand","secret","separate","shaggy","shaky","shallow","sharp","shiny","shivering","shocking","short","silent","silly","simple","simplistic","skinny","slim","slimy","slippery","slow","small","smoggy","smooth","soft","soggy","solid","sophisticated","sour","sparkling","special","spicy","spiky","spiritual","spooky","spotted","spotty","square","squealing","squeamish","standing","steady","steep","sticky","stiff","stormy","straight","strange","striped","sturdy","sweet","swift",
+"tacit","tan","tangible","tangy","tart","teeny","teeny-tiny","temporary","tender","tenuous","tested","therapeutic","thick","thin","thinkable","thundering","tight","tiny","tough","towering","tricky","true","typical",
+"ubiquitous","uncovered","understood","unique","unknown","unnatural","unused","unusual","unwritten","used",
+"vague","vast","violet","volatile",
+"wacky","watery","weak","wet","whimsical","white","whole","wholesale","wide","wiggly","wild","windy","wiry","wooden","workable",
+"yellow",
+"zany","zesty","zippy"
 ]
 
 const superPosAdjSet = ["best","quickest","uttermost",]
-const superNegAdjSet = ["ugliest",]
+const superNegAdjSet = ["ugliest","worst"]
 const comparPosAdjSet = ["better",]
 const comparNegAdjSet = ["worse",]
 
 const heroAdjSet = [...posAdjSetPeople, ...neutAdjSetPeople]
 
-const monsterAdjSet = [...negAdjSet, ...neutAdjSetPeople]
+const monsterAdjSet = [...negAdjSetPeople, ...neutAdjSetPeople]
 
 // verb set
 const verbSet = ["slay", "treat with", "investigate the murder of", "investigate the disappearance of", "investigate the kidnapping of", "interrogate", "parley with", "study", "forge an alliance with", "reach an understanding with", "destroy", "banish", "ruin the life of", "loot the den of", "domesticate", "bring to heel", "lay low", "chronicle the conquests of", "vanquish"];

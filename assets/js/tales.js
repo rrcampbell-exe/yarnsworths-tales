@@ -1,4 +1,4 @@
-var countObj = {
+const countObj = {
     raceCount: "",
     classCount: "",
     verbCount: "",
@@ -6,6 +6,9 @@ var countObj = {
     valueCount: "",
     talesTotal: "",
 }
+
+let heroAdjFinal = ""
+let monsterAdjFinal = ""
 
 // FUNCTION TO GENERATE HERO DATA
 
@@ -16,6 +19,7 @@ let heroData = function () {
         let heroAdj = document.querySelector("#hero-adj")
         let randomIndex = Math.floor(Math.random() * heroAdjSet.length)
         heroAdj.textContent = heroAdjSet[randomIndex];
+        heroAdjFinal = heroAdj.textContent
     };
 
     // function to establish hero race
@@ -101,10 +105,10 @@ let verbChoice = function () {
 let monsterData = function () {
     // function to establish adjective for monster
     {
-        // let monsterAdjSelect = Match.ceil(Math.random() * monsterAdjSet.length)
         let monsterAdj = document.querySelector("#monster-adj")
         let randomIndex = Math.floor(Math.random() * monsterAdjSet.length)
         monsterAdj.textContent = monsterAdjSet[randomIndex]
+        monsterAdjFinal = monsterAdj.textContent
     };
     // function to establish monster
     let apiMonster = "https://www.dnd5eapi.co/api/monsters/"
@@ -124,6 +128,53 @@ let monsterData = function () {
             }
         })
 };
+
+// FUNCTIONS TO DETERMINE INDEFINITE ARTICLES
+function heroIndefArtAssign() {
+    const heroLetter = heroAdjFinal.charAt(0).toLowerCase();
+    let heroArticle = document.querySelectorAll(".hero-article")
+
+    if (
+        heroLetter === "a" ||
+        heroLetter === "e" ||
+        heroLetter === "i" ||
+        heroLetter === "o" ||
+        heroLetter === "u"
+    ) {
+        heroArticle.forEach(node => {
+            node.textContent = "an"
+        }) 
+        return;
+    } else {
+        heroArticle.forEach(node => {
+            node.textContent = "a"
+        }) 
+        return;
+    }
+}
+
+function monsterIndefArtAssign() {
+    const monsterLetter = monsterAdjFinal.charAt(0).toLowerCase();
+    let monsterArticle = document.querySelectorAll(".monster-article")
+
+    if (
+        monsterLetter === "a" ||
+        monsterLetter === "e" ||
+        monsterLetter === "i" ||
+        monsterLetter === "o" ||
+        monsterLetter === "u"
+    ) {
+        monsterArticle.forEach(node => {
+            node.textContent = "an"
+        }) 
+        return;
+    } else {
+        monsterArticle.forEach(node => {
+            node.textContent = "a"
+        }) 
+        return;
+    }
+}
 
 // functions to affect visibility of story content on page load and on button click
 let taleVisibility = function () {
@@ -180,6 +231,8 @@ tellMeAnotherYarnsyEl.addEventListener("click", () => {
     heroData();
     verbChoice();
     monsterData();
+    setTimeout(heroIndefArtAssign, 200)
+    setTimeout(monsterIndefArtAssign, 200)
 });
 
 // RUNNING OF FUNCTIONS
@@ -189,4 +242,6 @@ heroData();
 verbChoice();
 monsterData();
 displayCount();
+setTimeout(heroIndefArtAssign, 200)
+setTimeout(monsterIndefArtAssign, 200)
 delayFunction();

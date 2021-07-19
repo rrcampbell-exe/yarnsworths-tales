@@ -25,7 +25,7 @@
                     <p>Yours truly has catalogued the chronicles of heroes and heraldry beyond compare. Now, be <em>dazzled</em> as I spin for you one of <span id=tale-count></span> such yarns!</p>
                 </article>
                 <article id="tale-intro" class="tale-intro">
-                    <p><span class="early-line-style">I've heard tell</span> of a <span id="hero-adj"></span> <span class="race"></span> <span class="class"></span> who set off to <span id="verb"></span> a <span id="monster-adj"></span> <span id="monster"></span> in the name of <span id="value"></span>.</p>
+                    <p><span class="early-line-style">I've heard tell</span> of <span class="indef-article hero-article">a</span> <span id="hero-adj"></span> <span class="race"></span> <span class="class"></span> who set off to <span id="verb"></span> <span class="indef-article monster-article">a</span> <span id="monster-adj"></span> <span id="monster"></span> in the name of <span id="value"></span>.</p>
                     <p><span class="early-line-style">What became</span> of this <span class="race"></span> <span class="class"></span>? Adventure forth and learn for yourself!</p>
                 </article>
                 <div class="button-container">
@@ -38,8 +38,9 @@
         </div>
     </div>
     <footer>
-        <p><a href = "https://rrcampbell-exe.github.io/" target="_blank">&copy;2021 Ryan R. Campbell</a></p>
+        <p><a href = "https://rrcampbell-exe.github.io/" target="_blank">&copy;<span id="year"></span> Ryan R. Campbell</a></p>
     </footer>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="assets/js/tales-data.js"></script>

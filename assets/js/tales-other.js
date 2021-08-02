@@ -57,6 +57,23 @@ function affectedPartyChoice() {
     affectedParty.textContent = affectedPartySet[randomIndex];
 }
 
+function rerunName() {
+    $.ajax({
+        url: 'https://randomuser.me/api/',
+        dataType: 'json',
+        success: function (data) {
+            let heroName = document.querySelectorAll(".hero-name")
+            heroName.forEach(node => {
+                if (data.results[0].nat == "IR") {
+                    rerunName();
+                    return;
+                }
+                node.textContent = data.results[0].name.first
+            })
+        }
+    });
+}
+
 // SELECT VERB
 
 let verbChoice = function () {

@@ -57,10 +57,15 @@ let heroData = function () {
         url: 'https://randomuser.me/api/',
         dataType: 'json',
         success: function (data) {
-            let heroName = document.querySelectorAll(".hero-name")
-            heroName.forEach(node => {
+            // if first name is in the Arabic alphabet, select a new name
+            if (data.results[0].nat == "IR") {
+                rerunName();
+            } else {
+                let heroName = document.querySelectorAll(".hero-name")
+                heroName.forEach(node => {
                 node.textContent = data.results[0].name.first
-            })
+                })
+            }
         }
     });
 

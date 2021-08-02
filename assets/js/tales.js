@@ -24,7 +24,7 @@ let heroData = function () {
 
     // function to establish hero race
     let apiRace = "https://www.dnd5eapi.co/api/races/"
-    let race = document.querySelectorAll(".race");
+    let race = document.querySelectorAll(".hero-race");
 
     fetch(apiRace)
         .then(res => res.json())
@@ -46,7 +46,7 @@ let heroData = function () {
 
     // function to establish hero class
     let apiClass = "https://www.dnd5eapi.co/api/classes/"
-    let heroClass = document.querySelectorAll(".class")
+    let heroClass = document.querySelectorAll(".hero-class")
 
     fetch(apiClass)
         .then(res => res.json())
@@ -65,7 +65,7 @@ let heroData = function () {
         })
 
     // function to establish hero's value
-    let value = document.querySelector("#value")
+    let value = document.querySelectorAll(".value")
     let randomIndex = Math.floor(Math.random() * valueSet.length)
     value.textContent = valueSet[randomIndex];
 

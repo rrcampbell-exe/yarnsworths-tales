@@ -1,4 +1,27 @@
+// time expressions
+
+const timeExpPluralSet = ["moons", "millennia", "years", "decades", "centuries", "score", "eons", "generations", "seasons", "fortnights", "harvests", "floods", "jubilees"]
+
+const timeExpSingularSet = ["morning", "afternoon", "evening", "spring", "summer", "fall", "winter", "day", "night"]
+
+// regions of faerun
+
+const faerunRegionSet = ["in the High Forest", "in Frozenfar", "on the Savage Frontier", "in the Silver Marches", "along the Sword Coast", "in Waterdeep", "in Icewind Dale", "in Silverymoon", "in the Anauroch desert", "on the shores of the Moonsea", "in the Dalelands", "the Ride", "the Vast", "on the shores of the Sea of Fallen Stars", "in the Cold Lands", "in Vaasa", "in the Hordelands", "in Damara", "in the Great Dale", "in Impiltur", "in Narfell", "in Rashemen", "in Thesk", "on the isle of Evermeet", "on the isle of Lantan", "in the Lands of Intrigue", "in Amn", "in Calimshan", "in Tethyr", "on the Moonshae Isles", "on the Nelanther Isles", "in the island nation of Nimbral", "in Baldur's Gate", "in the Western Heartlands", "in Cormyr", "on the shores of the Trackless Sea", "in Akanûl", "in Chondath", "along the Dragon Coast", "in Hlondeth", "amidst the Pirate Isles", "in Sembia", "in Sespech", "in Turmish", "on the Shining Plains", "in the autocratic magocracy of Aglarond", "in the isolated kingdom of Altumbel", "amidst the city-states of Chessenta", "amidst the ever-expanding Chondalwood", "in High Imaskar", "in the once-mighty empire of Mulhorand", "in Murghôm", "in Okoth", "in Thay", "in Tymanther", "in Unther", "in the jungles of Chult", "amidst the city-states of Lapaliiya", "in the mysterious kingdom of Samarach", "in Tashalar", "in Thindol", "in the Border Kingdoms", "in Dambrath", "along the sheer cliffs of the Great Rift", "in Halruaa, the nation of wizards,", "on the shores of the Lake of Steam", "on the rolling grasslands of the Shaar", "in the merchant kingdom of Durpar", "in Estagund", "in the wealthy nation of Var the Golden", "in the Shining Lands", "in the halfling kingdom of Luiren", "in the feudal kingdom of Ulgarth", "in the Utter East", "in Veldorn", "amidst the ruins of Ched Nasad", "in Dunspeirrin", "in Gracklstugh", "in Skullport", "in Llurth Dreir", "in Maerimydra", "in the infamous drow city of Menzoberranzan", "in Sshamath", "in Blingdenstone"]
+
+// inciting transition verbs
+
+const incitingTransitionSet = ["returned", "ventured", "arrived", "stumbled", "ambled", "hiked", "raced", "roamed", "wandered", "ran", "sauntered", "shuffled", "strolled", "padded", "trekked"]
+
+// inciting verbs
+
+const incitingVerbSet = ["discover", "learn", "hear", "realize"]
+
+// affected party
+
+const affectedPartySet = ["brother", "sister", "son", "daughter", "nephew", "niece", "mother", "father", "parents", "family", "uncle", "aunt", "beloved pet", "liege lord"]
+
 // adjective sets
+
 const masterAdjSet = 
 ["aback","abaft","abandoned","abashed","aberrant","abhorrent","abiding","abject","ablaze","able","abnormal","aboard","aboriginal","abortive","abounding","abrasive","abrupt","absent","absorbed","absorbing","abstracted","absurd","abundant","abusive","acceptable","accessible","accidental","accurate","acid","acidic","acoustic","acrid","actually","ad","hoc","adamant","adaptable","addicted","adhesive","adjoining","adorable","adventurous","afraid","aggressive","agonizing","agreeable","ahead","ajar","alcoholic","alert","alike","alive","alleged","alluring","aloof","amazing","ambiguous","ambitious","amuck","amused","amusing","ancient","angry","animated","annoyed","annoying","anxious","apathetic","aquatic","aromatic","arrogant","ashamed","aspiring","assorted","astonishing","attractive","auspicious","automatic","available","average","awake","aware","awesome","awful","axiomatic",
 "bad","barbarous","bashful","bawdy","beautiful","befitting","belligerent","beneficial","bent","berserk","best","better","bewildered","big","billowy","bite-sized","bitter","bizarre","black","black-and-white","bloody","blue","blue-eyed","blushing","boiling","boorish","bored","boring","bouncy","boundless","brainy","brash","brave","brawny","breakable","breezy","brief","bright","bright","broad","broken","brown","bumpy","burly","bustling","busy",

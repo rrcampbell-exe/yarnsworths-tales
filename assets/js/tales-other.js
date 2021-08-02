@@ -10,87 +10,54 @@ const countObj = {
 let heroAdjFinal = ""
 let monsterAdjFinal = ""
 
-// FUNCTION TO GENERATE HERO DATA
+// SELECT TIME EXPRESSION, PLURAL
+function timeExpPluralChoice() {
+    let timeExpPlural = document.querySelector("#time-exp-plural")
+    let randomIndex = Math.floor(Math.random() * timeExpPluralSet.length)
+    timeExpPlural.textContent = timeExpPluralSet[randomIndex]
+}
 
-let heroData = function () {
+// SELECT TIME EXPRESSION, SINGULAR
 
-    // function to establish adjective for hero
-    {
-        let heroAdj = document.querySelector("#hero-adj")
-        let randomIndex = Math.floor(Math.random() * heroAdjSet.length)
-        heroAdj.textContent = heroAdjSet[randomIndex];
-        heroAdjFinal = heroAdj.textContent
-    };
+function timeExpSingularChoice() {
+    let timeExpSingular = document.querySelector("#time-exp-singular");
+    let randomIndex = Math.floor(Math.random() * timeExpSingularSet.length);
+    timeExpSingular.textContent = timeExpSingularSet[randomIndex]
+}
 
-    // function to establish hero race
-    let apiRace = "https://www.dnd5eapi.co/api/races/"
-    let race = document.querySelectorAll(".hero-race");
+// SELECT REGION OF FAERUN
 
-    fetch(apiRace)
-        .then(res => res.json())
-        .then(data => {
-            let randomIndex = Math.floor(Math.random() * (data.results.length + 1))
-            countObj.raceCount = (data.results.length + uncommonRaces.length)
-            talesCount(countObj.raceCount)
-            race.forEach(node => {
-                if (randomIndex < data.results.length) {
-                    node.textContent = data.results[randomIndex].index;
-                } else {
-                    let uncommonRaceIndex = Math.floor(Math.random() * uncommonRaces.length)
-                    race.forEach(node => {
-                        node.textContent = uncommonRaces[uncommonRaceIndex]
-                    })
-                }
-            });
-        })
+function faerunRegionChoice() {
+    let faerunRegion = document.querySelector(".faerun-location");
+    let randomIndex = Math.floor(Math.random() * faerunRegionSet.length);
+    faerunRegion.textContent = faerunRegionSet[randomIndex]
+}
 
-    // function to establish hero class
-    let apiClass = "https://www.dnd5eapi.co/api/classes/"
-    let heroClass = document.querySelectorAll(".hero-class")
+// SELECT INCITING TRANSITION
 
-    fetch(apiClass)
-        .then(res => res.json())
-        .then(data => {
-            let randomIndex = Math.floor(Math.random() * (data.results.length +1))
-            countObj.classCount = (data.results.length + uncommonClasses.length)
-            talesCount(countObj.classCount)
-            heroClass.forEach(node => {
-                if (randomIndex < data.results.length) {
-                    node.textContent = data.results[randomIndex].index;
-                } else {
-                    let uncommonClassIndex = Math.floor(Math.random() * uncommonClasses.length)
-                    node.textContent = uncommonClasses[uncommonClassIndex]
-                }
-            });
-        })
+function incitingTransitionChoice() {
+    let incitingTransition = document.querySelector(".inciting-transition");
+    let randomIndex = Math.floor(Math.random() * incitingTransitionSet.length);
+    incitingTransition.textContent = incitingTransitionSet[randomIndex];
+}
 
-    // function to establish hero's value
-    let value = document.querySelectorAll(".value")
-    let randomIndex = Math.floor(Math.random() * valueSet.length)
-    value.textContent = valueSet[randomIndex];
+// SELECT INCITING VERB
 
-    // cascading logic if "vengeance" is chosen as hero's value
-    if (valueSet[randomIndex] === "vengeance") {
-        let randomIndex = Math.floor(Math.random() * venge.length)
-        value.textContent += venge[randomIndex];
-    };
+function incitingVerbChoice() {
+    let incitingVerb = document.querySelector(".inciting-verb");
+    let randomIndex = Math.floor(Math.random() * incitingVerbSet.length);
+    incitingVerb.textContent = incitingVerbSet[randomIndex];
+}
 
-    // cascading logic if "faith" is chosen as hero's value
-    if (valueSet[randomIndex] === "faith") {
-        let randomIndex = Math.floor(Math.random() * gods.length)
-        value.textContent = gods[randomIndex];
-    };
+// SELECT AFFECTED PARTY, INCITING INCIDENT
 
-    // cascading logic if "loyalty" is chosen as hero's value
-    if (valueSet[randomIndex] === "loyalty") {
-        let randomIndex = Math.floor(Math.random() * loyalties.length)
-        value.textContent += loyalties[randomIndex];
-    };
-    countObj.valueCount = (valueSet.length + venge.length + gods.length + loyalties.length)
-    talesCount(countObj.valueCount)
-};
+function affectedPartyChoice() {
+    let affectedParty = document.querySelector(".inciting-affected-party");
+    let randomIndex = Math.floor(Math.random() * affectedPartySet.length);
+    affectedParty.textContent = affectedPartySet[randomIndex];
+}
 
-// FUNCTION TO SELECT VERB
+// SELECT VERB
 
 let verbChoice = function () {
     let verb = document.querySelector("#verb")
@@ -100,34 +67,6 @@ let verbChoice = function () {
     talesCount(countObj.verbCount)
 };
 
-// FUNCTION TO GENERATE MONSTER DATA
-
-let monsterData = function () {
-    // function to establish adjective for monster
-    {
-        let monsterAdj = document.querySelector("#monster-adj")
-        let randomIndex = Math.floor(Math.random() * monsterAdjSet.length)
-        monsterAdj.textContent = monsterAdjSet[randomIndex]
-        monsterAdjFinal = monsterAdj.textContent
-    };
-    // function to establish monster
-    let apiMonster = "https://www.dnd5eapi.co/api/monsters/"
-    let monster = document.querySelector("#monster")
-
-    fetch(apiMonster)
-        .then(res => res.json())
-        .then(data => {
-            let randomIndex = Math.floor(Math.random() * data.results.length)
-            countObj.monsterCount = data.results.length
-            talesCount(countObj.monsterCount)
-            let monsterText = data.results[randomIndex].name.toLowerCase() 
-            if (monsterText.includes(",")) {
-                monster.textContent = monsterText.split(',')[0]
-            } else {
-                monster.textContent = monsterText
-            }
-        })
-};
 
 // FUNCTIONS TO DETERMINE INDEFINITE ARTICLES
 function heroIndefArtAssign() {
@@ -225,6 +164,12 @@ function displayCount() {
 var tellMeAnotherYarnsyEl = document.getElementById("another-yarnsy")
 tellMeAnotherYarnsyEl.addEventListener("click", () => {
     taleInvisibility();
+    timeExpPluralChoice();
+    timeExpSingularChoice();
+    faerunRegionChoice();
+    incitingTransitionChoice();
+    incitingVerbChoice()
+    affectedPartyChoice()
     yarnsyShake();
     talesShake();
     delayFunction();
@@ -238,6 +183,12 @@ tellMeAnotherYarnsyEl.addEventListener("click", () => {
 // RUNNING OF FUNCTIONS
 
 taleInvisibility();
+timeExpPluralChoice();
+timeExpSingularChoice();
+faerunRegionChoice();
+incitingTransitionChoice()
+incitingVerbChoice()
+affectedPartyChoice()
 heroData();
 verbChoice();
 monsterData();

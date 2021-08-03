@@ -18,7 +18,7 @@ const incitingVerbSet = ["discover", "learn", "hear", "realize"]
 
 // affected party
 
-const affectedPartySet = ["brother", "sister", "son", "daughter", "nephew", "niece", "mother", "father", "parents", "family", "uncle", "aunt", "beloved pet", "liege lord"]
+const affectedPartySet = ["brother", "sister", "son", "daughter", "nephew", "niece", "mother", "father", "parents", "family", "uncle", "aunt", "pet", "liege lord"]
 
 // adjective sets
 
@@ -407,12 +407,29 @@ const heroAdjSet = [...posAdjSetPeople, ...neutAdjSetPeople]
 
 const monsterAdjSet = [...negAdjSetPeople, ...neutAdjSetPeople]
 
-// verb set
+// VERB SETS
 const verbSet = ["slay", "treat with", "investigate the murder of", "investigate the disappearance of", "investigate the kidnapping of", "interrogate", "parley with", "study", "forge an alliance with", "reach an understanding with", "destroy", "banish", "ruin the life of", "loot the den of", "domesticate", "bring to heel", "lay low", "chronicle the conquests of", "vanquish"];
 
+const incitingOutcomeSet = ["slain", "murdered", "kidnapped", "hoodwinked", "bamboozled", "abducted", "stolen away", "terrorized", "whisked away", "swindled", "defrauded"]
+
+// ADVERB SETS
+
+// adverbs of extent
+
+const advExtentStrong = ["deeply", "immeasurably", "exceedingly", "tremendously", "quite", "extremely", "fiercely", "fervently", "greatly", "hopelessly", "instantly", "justly", "keenly", "painfully", "physically", "positively", "powerfully", "promptly", "readily", "righteously", "rightfully", "seriously", "solemnly", "swiftly", "thoroughly", "unbearably", "utterly", "visibly", "wholly", "woefully"]
 
 // value set
 const valueSet = ["honor", "love", "untold riches", "fame", "the truth", "faith", "adventure", "beauty", "balance", "justice", "virtue", "friendship", "liberty", "the pursuit of happiness", "mercy", "fun", "influence", "knowledge", "general mischief", "loyalty", "pleasure", "recognition", "peace", "security", "self-respect", "stability", "family", "status", "wisdom", "vengeance", "prophecy", "wish fulfillment"]
+
+// EMOTIONAL STATES
+
+const emotionNegative = ["saddened", "upset", "disappointed", "distraught", "disturbed", "furious", "woebegone", "aggrieved", "depressed", "heartbroken", "bereaved", "distressed", "grief-stricken", "discouraged", "disheartened", "dispirited", "dejected", "troubled", "disquieted", "affected"]
+
+// NOUN SETS
+
+// events, inciting, negative
+
+nounNegEventSet = ["occurrence", "act", "situation", ""]
 
 // CASCADING LOGIC
 

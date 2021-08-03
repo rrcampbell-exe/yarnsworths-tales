@@ -49,7 +49,13 @@ function incitingVerbChoice() {
     incitingVerb.textContent = incitingVerbSet[randomIndex];
 }
 
-// SELECT AFFECTED PARTY, INCITING INCIDENT
+// SELECT AFFECTED PARTY AND ADJECTIVE FOR SAME, INCITING INCIDENT
+
+function affectedPartyAdj() {
+    let adj = document.querySelector(".inciting-affected-adj");
+    let randomIndex = Math.floor(Math.random() * posAdjSetPeople.length);
+    adj.textContent = posAdjSetPeople[randomIndex]
+}
 
 function affectedPartyChoice() {
     let affectedParty = document.querySelector(".inciting-affected-party");
@@ -83,6 +89,35 @@ let verbChoice = function () {
     countObj.verbCount = verbSet.length
     talesCount(countObj.verbCount)
 };
+
+function incitingOutcomeChoice() {
+    let outcome = document.querySelector(".inciting-outcome")
+    let randomIndex = Math.floor(Math.random() * incitingOutcomeSet.length)
+    outcome.textContent = incitingOutcomeSet[randomIndex]
+};
+
+// INCITING INCIDENT, SECOND SENTENCE
+
+function adverbExtent() {
+    let adverb = document.querySelector(".adverb-extent")
+    let randomIndex = Math.floor(Math.random() * advExtentStrong.length)
+    let preTransformAdv = advExtentStrong[randomIndex]
+    let adverbCaps = preTransformAdv[0].toUpperCase() + preTransformAdv.slice(1)
+    adverb.textContent = adverbCaps
+}
+
+function incitingEmotionalStateInitial() {
+    let emotion = document.querySelector(".emotion-negative")
+    let randomIndex = Math.floor(Math.random() * emotionNegative.length)
+    emotion.textContent = emotionNegative[randomIndex]
+}
+
+function adjNegInciting() {
+    // this most [adjective] [event]...
+    let adj = document.querySelector(".adj-neg-inciting")
+    let randomIndex = Math.floor(Math.random() * negAdjSetThings.length)
+    adj.textContent = negAdjSetThings[randomIndex];
+}
 
 
 // FUNCTIONS TO DETERMINE INDEFINITE ARTICLES
@@ -185,13 +220,18 @@ tellMeAnotherYarnsyEl.addEventListener("click", () => {
     timeExpSingularChoice();
     faerunRegionChoice();
     incitingTransitionChoice();
-    incitingVerbChoice()
-    affectedPartyChoice()
+    incitingVerbChoice();
+    affectedPartyAdj();
+    affectedPartyChoice();
+    incitingOutcomeChoice();
+    adverbExtent();
+    incitingEmotionalStateInitial()
+    adjNegInciting();
     yarnsyShake();
     talesShake();
     delayFunction();
     heroData();
-    verbChoice();
+    // verbChoice();
     monsterData();
     setTimeout(heroIndefArtAssign, 200)
     setTimeout(monsterIndefArtAssign, 200)
@@ -203,11 +243,16 @@ taleInvisibility();
 timeExpPluralChoice();
 timeExpSingularChoice();
 faerunRegionChoice();
-incitingTransitionChoice()
-incitingVerbChoice()
-affectedPartyChoice()
+incitingTransitionChoice();
+incitingVerbChoice();
+affectedPartyAdj();
+affectedPartyChoice();
+incitingOutcomeChoice();
+adverbExtent();
+incitingEmotionalStateInitial()
+adjNegInciting(); 
 heroData();
-verbChoice();
+// verbChoice();
 monsterData();
 displayCount();
 setTimeout(heroIndefArtAssign, 200)
